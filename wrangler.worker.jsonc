@@ -16,5 +16,8 @@
   ],
   "observability": {
     "enabled": true
+  },
+  "vars": {
+    "MEMORY_WILL_REGISTRY_PACKAGE_ID": "0xdba62cf14673aba3fa797f0aef06be9e0e4b133ae4822d3743b9594f6cff1d2e"
   }
 }

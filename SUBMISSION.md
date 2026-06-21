@@ -43,19 +43,21 @@ Memory Will turns agent handoff into an inheritance event. The user kills a live
 - Walrus Publisher stores the Memory Will JSON before restore is enabled.
 - Walrus Aggregator is read during successor restore. If the blob cannot be read, the app shows no-success instead of a fake handoff.
 - The proof panel reads the Walrus blob and Sui object metadata so a judge can inspect the storage anchor.
-- A Sui Move receipt registry is included under `move/`. It can publish `MemoryWillAnchor` objects with the Memory Will id, Walrus blob id, Walrus object id, checkpoint hash, policy hash, redaction hash, and successor role. The submitted P0 does not auto-sign transactions; it reports the registry as built/not published unless a package id and server signer are configured.
+- A Sui Move receipt registry is included under `move/` and published on testnet at `0xdba62cf14673aba3fa797f0aef06be9e0e4b133ae4822d3743b9594f6cff1d2e`. It can publish `MemoryWillAnchor` objects with the Memory Will id, Walrus blob id, Walrus object id, checkpoint hash, policy hash, redaction hash, and successor role. The submitted P0 does not expose a server signer for automatic per-receipt anchor transactions.
 
 ## What Is Real Today
 
 - Public workbench at the live URL.
 - Real Walrus write/read path in `src/lib/memory-will/walrus.ts`.
-- Real Sui Move registry source in `move/sources/memory_will_registry.move`.
+- Real Sui Move registry source in `move/sources/memory_will_registry.move`, published on Sui testnet.
 - Live model successor output recorded in `.hunter/agent-runs.json`.
 - Second-browser receipt reopen at `/?will=latest`.
 - Missing receipt recovery path that shows no-success and returns to a fresh run.
 - Public runtime report: `.hunter/runtime-interaction.report.json`.
 - Pitch deck: `projects/pitch/ppt-master/memory-will-deck_ppt169_20260621/exports/memory-will-deck_20260621_232345.pptx`.
 - Demo video: https://youtu.be/JY0_hyjtelM.
+- Sui testnet package: `0xdba62cf14673aba3fa797f0aef06be9e0e4b133ae4822d3743b9594f6cff1d2e`.
+- Publish digest: `HaU5T3x5jvN9HzAzRC68iJEzWHtJqX7kxC7rGCQnz3xf`.
 
 ## Verification
 

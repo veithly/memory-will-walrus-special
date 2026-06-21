@@ -4,6 +4,7 @@ node_modules/
 .wrangler/
 worker-assets/
 vendor/
+move/build/
 test-results/
 tsconfig.tsbuildinfo
 *.log

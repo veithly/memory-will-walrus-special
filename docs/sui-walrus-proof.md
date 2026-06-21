@@ -1,6 +1,6 @@
 # Sui and Walrus proof path
 
-Memory Will uses Walrus on the live P0 path and keeps a Sui Move receipt registry ready for a published testnet anchor.
+Memory Will uses Walrus on the live P0 path and has a Sui Move receipt registry published on testnet.
 
 ## P0 path in the demo
 
@@ -14,6 +14,18 @@ If the Walrus write or read fails, the UI returns a no-success state and the suc
 ## Move registry
 
 The Move package lives in `move/`.
+
+Testnet package id:
+
+```text
+0xdba62cf14673aba3fa797f0aef06be9e0e4b133ae4822d3743b9594f6cff1d2e
+```
+
+Publish transaction:
+
+```text
+HaU5T3x5jvN9HzAzRC68iJEzWHtJqX7kxC7rGCQnz3xf
+```
 
 ```powershell
 pnpm sui:build
@@ -34,13 +46,12 @@ The contract does not store private Memory Will text. The payload stays in Walru
 
 ## Publishing boundary
 
-Publishing the package or executing an anchor transaction writes to Sui testnet and consumes gas. The repo includes the Move code and TypeScript transaction builder, but it does not auto-publish or auto-sign from the public demo.
+Publishing the package or executing an anchor transaction writes to Sui testnet and consumes gas. The package is published on testnet, and the public demo is configured with the package id. It still does not expose a server signer or auto-sign per-user anchor transactions from the public demo.
 
-To enable the optional anchor path after human approval:
+To enable the optional per-receipt anchor path after human approval:
 
-1. Publish `move/` to Sui testnet.
-2. Set `MEMORY_WILL_REGISTRY_PACKAGE_ID` to the published package id.
-3. Set `SUI_TESTNET_PAYER_PRIVATE_KEY` only in server secrets.
-4. Route anchor execution through `executeMemoryWillAnchor` in `src/lib/memory-will/sui-anchor.ts`.
+1. Keep `MEMORY_WILL_REGISTRY_PACKAGE_ID` set to the published package id.
+2. Set `SUI_TESTNET_PAYER_PRIVATE_KEY` only in server secrets.
+3. Route anchor execution through `executeMemoryWillAnchor` in `src/lib/memory-will/sui-anchor.ts`.
 
-The current submitted proof surface truthfully shows Walrus write/read and Sui object metadata inspection. If the Move registry is not published, the proof panel reports "Built, not published" instead of claiming a transaction.
+The current submitted proof surface truthfully shows Walrus write/read, Sui object metadata inspection, and the published Move registry package id. Per-receipt anchor transactions require a server signer and remain disabled unless configured.

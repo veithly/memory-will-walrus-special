@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <radialGradient id="bgGlow" cx="74%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#4EC5F1" stop-opacity="0.22" />
+      <stop offset="58%" stop-color="#4EC5F1" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#4EC5F1" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="greenGlow" cx="82%" cy="61%" r="40%">
+      <stop offset="0%" stop-color="#73F0B8" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#73F0B8" stop-opacity="0" />
+    </radialGradient>
+    <filter id="accentGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur" />
+      <feFlood flood-color="#4EC5F1" flood-opacity="0.42" result="glowColor" />
+      <feComposite in="glowColor" in2="blur" operator="in" result="glow" />
+      <feMerge>
+        <feMergeNode in="glow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="background">
+    <rect x="0" y="0" width="1280" height="720" fill="#0B0F14" />
+    <rect x="0" y="0" width="1280" height="720" fill="url(#bgGlow)" />
+    <rect x="0" y="0" width="1280" height="720" fill="url(#greenGlow)" />
+    <path d="M56 104H1224 M56 188H1224 M56 272H1224 M56 356H1224 M56 440H1224 M56 524H1224 M56 608H1224" fill="none" stroke="#223143" stroke-width="1" stroke-opacity="0.55" />
+    <path d="M132 48V672 M280 48V672 M428 48V672 M576 48V672 M724 48V672 M872 48V672 M1020 48V672 M1168 48V672" fill="none" stroke="#223143" stroke-width="1" stroke-opacity="0.36" />
+  </g>
+  <g id="header">
+    <text x="56" y="52" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#A8B6C6" letter-spacing="2">SUI OVERFLOW 2026 / SPECIAL - WALRUS</text>
+    <text x="1224" y="52" text-anchor="end" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#667789">01 / 06</text>
+  </g>
+  <g id="hero-title">
+    <text font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" fill="#EAF1F7" font-weight="800" font-size="72" x="64" y="172">Memory</text><text font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" fill="#EAF1F7" font-weight="800" font-size="72" x="64" y="250">Will</text><text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="26" x="68" y="344">Kill one agent. Reopen scoped</text><text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="26" x="68" y="380">Walrus memory by receipt.</text><path fill="#4EC5F1" fill-opacity="0.12" stroke="#4EC5F1" stroke-width="2" d="M92,414 H268 A24,24 0 0 1 292,438 V438 A24,24 0 0 1 268,462 H92 A24,24 0 0 1 68,438 V438 A24,24 0 0 1 92,414 Z" />
+    
+  <g transform="translate(88, 426)" fill="none" stroke="#4EC5F1" stroke-width="2">
+    <path d="M12 4c4.418 0 8 3.358 8 7.5c0 1.901 -.755 3.637 -2 4.96l0 2.54a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1v-2.54c-1.245 -1.322 -2 -3.058 -2 -4.96c0 -4.142 3.582 -7.5 8 -7.5" />
+    <path d="M10 17v3" />
+    <path d="M14 17v3" />
+    <path d="M8 11a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+    <path d="M14 11a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  </g>
+    <text x="126" y="445" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="18" font-weight="700" fill="#EAF1F7">First click: Kill Agent</text>
+  </g>
+  <g id="kill-stage">
+    <path fill="#121A24" stroke="#2B3A4B" stroke-width="2" d="M480,132 H730 A10,10 0 0 1 740,142 V482 A10,10 0 0 1 730,492 H480 A10,10 0 0 1 470,482 V142 A10,10 0 0 1 480,132 Z" />
+    <text x="496" y="168" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#A8B6C6" letter-spacing="1.4">PREDECESSOR</text>
+    
+  <g transform="translate(672, 143) scale(1.41667)" fill="none" stroke="#F7B955" stroke-width="2">
+    <path d="M12 4c4.418 0 8 3.358 8 7.5c0 1.901 -.755 3.637 -2 4.96l0 2.54a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1v-2.54c-1.245 -1.322 -2 -3.058 -2 -4.96c0 -4.142 3.582 -7.5 8 -7.5" />
+    <path d="M10 17v3" />
+    <path d="M14 17v3" />
+    <path d="M8 11a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+    <path d="M14 11a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  </g>
+    <path d="M502 226H708" stroke="#F7B955" stroke-width="3" stroke-dasharray="8,4" />
+    <text x="502" y="270" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="30" font-weight="800" fill="#EAF1F7">Agent killed</text>
+    <text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="18" x="502" y="318">Checkpoint locks.</text><text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="18" x="502" y="346">Local context drops to 0%.</text><text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="18" x="502" y="374">The user scopes inheritance.</text><path fill="#F7B955" fill-opacity="0.12" stroke="#F7B955" stroke-width="1.5" d="M519,420 H675 A17,17 0 0 1 692,437 V437 A17,17 0 0 1 675,454 H519 A17,17 0 0 1 502,437 V437 A17,17 0 0 1 519,420 Z" />
+    <text x="597" y="442" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F7B955">NO HIDDEN TRANSCRIPT</text>
+  </g>
+  <g id="receipt-stage">
+    <path fill="#121A24" stroke="#4EC5F1" stroke-width="2" filter="url(#accentGlow)" d="M810,96 H1150 A10,10 0 0 1 1160,106 V566 A10,10 0 0 1 1150,576 H810 A10,10 0 0 1 800,566 V106 A10,10 0 0 1 810,96 Z" />
+    <text x="832" y="136" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#A8B6C6" letter-spacing="1.4">MEMORY WILL RECEIPT</text>
+    
+  <g transform="translate(1092, 112) scale(1.41667)" fill="none" stroke="#73F0B8" stroke-width="2">
+    <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2m4 -14h6m-6 4h6m-2 4h2" />
+  </g>
+    <text x="832" y="198" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="34" font-weight="800" fill="#EAF1F7">Scoped restore ready</text>
+    <g id="receipt-fields">
+      <path fill="#0B0F14" stroke="#2B3A4B" stroke-width="1.5" d="M840,238 H1120 A8,8 0 0 1 1128,246 V286 A8,8 0 0 1 1120,294 H840 A8,8 0 0 1 832,286 V246 A8,8 0 0 1 840,238 Z" />
+      <text x="854" y="260" font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#667789">WALRUS BLOB</text>
+      <text x="854" y="282" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#4EC5F1">certified pointer</text>
+      <path fill="#0B0F14" stroke="#2B3A4B" stroke-width="1.5" d="M840,314 H1120 A8,8 0 0 1 1128,322 V362 A8,8 0 0 1 1120,370 H840 A8,8 0 0 1 832,362 V322 A8,8 0 0 1 840,314 Z" />
+      <text x="854" y="336" font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#667789">REDUCTIONS</text>
+      <text x="854" y="358" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#F7B955">private budget blocked</text>
+      <path fill="#0B0F14" stroke="#2B3A4B" stroke-width="1.5" d="M840,390 H1120 A8,8 0 0 1 1128,398 V438 A8,8 0 0 1 1120,446 H840 A8,8 0 0 1 832,438 V398 A8,8 0 0 1 840,390 Z" />
+      <text x="854" y="412" font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#667789">SUCCESSOR</text>
+      <text x="854" y="434" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#73F0B8">cold agent output hash</text>
+    </g>
+    <path fill="#73F0B8" fill-opacity="0.14" stroke="#73F0B8" stroke-width="1.5" d="M851,498 H1023 A19,19 0 0 1 1042,517 V517 A19,19 0 0 1 1023,536 H851 A19,19 0 0 1 832,517 V517 A19,19 0 0 1 851,498 Z" />
+    
+  <g transform="translate(852, 506) scale(0.916667)" fill="none" stroke="#73F0B8" stroke-width="2">
+    <path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06" />
+    <path d="M15 19l2 2l4 -4" />
+  </g>
+    <text x="886" y="523" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="700" fill="#EAF1F7">Inspectable proof</text>
+  </g>
+  <g id="footer">
+    <text x="56" y="668" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="16" fill="#A8B6C6">The first screen is a product consequence: agent death -&gt; scoped Walrus memory -&gt; receipt.</text>
+  </g>
+</svg>

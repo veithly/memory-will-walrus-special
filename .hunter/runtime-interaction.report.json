@@ -1,0 +1,1604 @@
+{
+  "schema": "runtime-interaction-report.v2",
+  "base_url": "https://memory-will-walrus-special.veithly.workers.dev",
+  "plan_path": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-interaction.plan.json",
+  "generated_at": "2026-06-21T18:27:34.062Z",
+  "pass": false,
+  "metrics": {
+    "case_count": 3,
+    "target_count": 5,
+    "target_passed": 3,
+    "browser_count": 3,
+    "browsers_passed": 2,
+    "mobile_context": true,
+    "trace_on_failure": true,
+    "user_action_count": 24,
+    "reload_assertion": true,
+    "second_context": true,
+    "console_errors": 8,
+    "failed_requests": 6,
+    "runtime_smells": 0
+  },
+  "targets": [
+    {
+      "name": "chromium",
+      "browser": "chromium",
+      "device": null,
+      "mobile": false,
+      "pass": true,
+      "cases": [
+        {
+          "name": "kill write restore receipt",
+          "context": "fresh public judge path",
+          "steps": [
+            {
+              "action": "goto",
+              "path": "/",
+              "pass": true,
+              "elapsed_ms": 1704
+            },
+            {
+              "action": "waitFor",
+              "text": "Checkpoint live",
+              "pass": true,
+              "elapsed_ms": 2169
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 117
+            },
+            {
+              "action": "assertText",
+              "text": "Predecessor killed",
+              "pass": true,
+              "elapsed_ms": 25
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 95
+            },
+            {
+              "action": "waitFor",
+              "text": "Walrus pointer certified",
+              "pass": true,
+              "elapsed_ms": 10643
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 95
+            },
+            {
+              "action": "waitFor",
+              "text": "Scoped restore complete",
+              "pass": true,
+              "elapsed_ms": 8089
+            },
+            {
+              "action": "click",
+              "text": "Legal successor",
+              "pass": true,
+              "elapsed_ms": 89
+            },
+            {
+              "action": "waitFor",
+              "text": "role legal",
+              "pass": true,
+              "elapsed_ms": 3979
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 80
+            },
+            {
+              "action": "assertText",
+              "text": "Scoped restore ready",
+              "pass": true,
+              "elapsed_ms": 30
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 64
+            },
+            {
+              "action": "waitFor",
+              "text": "Proof inspected",
+              "pass": true,
+              "elapsed_ms": 369
+            },
+            {
+              "action": "screenshot",
+              "path": ".hunter/runtime-artifacts/kill-write-restore-receipt-success.png",
+              "pass": true,
+              "elapsed_ms": 351
+            },
+            {
+              "action": "reload",
+              "pass": true,
+              "elapsed_ms": 645
+            },
+            {
+              "action": "assertText",
+              "text": "Receipt reopened",
+              "pass": true,
+              "elapsed_ms": 380
+            },
+            {
+              "action": "assertText",
+              "text": "Scoped restore ready",
+              "pass": true,
+              "elapsed_ms": 26
+            }
+          ],
+          "pass": true,
+          "runtime_scan": {
+            "textLength": 3263,
+            "clickableCount": 12,
+            "questionableControlCount": 0,
+            "smells": []
+          },
+          "trace": null,
+          "screenshot": null
+        },
+        {
+          "name": "receipt reopen second context",
+          "context": "second browser receipt viewer",
+          "steps": [
+            {
+              "action": "goto",
+              "path": "/?will=latest",
+              "pass": true,
+              "elapsed_ms": 1560
+            },
+            {
+              "action": "waitFor",
+              "text": "Receipt reopened",
+              "pass": true,
+              "elapsed_ms": 975
+            },
+            {
+              "action": "assertText",
+              "text": "Memory Will Receipt",
+              "pass": true,
+              "elapsed_ms": 18
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 102
+            },
+            {
+              "action": "waitFor",
+              "text": "Proof inspected",
+              "pass": true,
+              "elapsed_ms": 276
+            },
+            {
+              "action": "assertText",
+              "text": "Sui object",
+              "pass": true,
+              "elapsed_ms": 20
+            }
+          ],
+          "pass": true,
+          "runtime_scan": {
+            "textLength": 3288,
+            "clickableCount": 12,
+            "questionableControlCount": 0,
+            "smells": []
+          },
+          "trace": null,
+          "screenshot": null
+        },
+        {
+          "name": "negative missing receipt recovery",
+          "context": "fresh-error missing pointer recovery",
+          "steps": [
+            {
+              "action": "goto",
+              "path": "/?will=missing-will",
+              "pass": true,
+              "elapsed_ms": 1558
+            },
+            {
+              "action": "assertText",
+              "text": "No-success",
+              "pass": true,
+              "elapsed_ms": 1421
+            },
+            {
+              "action": "assertText",
+              "text": "Memory Will receipt not found.",
+              "pass": true,
+              "elapsed_ms": 20
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 104
+            },
+            {
+              "action": "waitFor",
+              "text": "Checkpoint live",
+              "pass": true,
+              "elapsed_ms": 1375
+            }
+          ],
+          "pass": true,
+          "runtime_scan": {
+            "textLength": 2402,
+            "clickableCount": 8,
+            "questionableControlCount": 0,
+            "smells": []
+          },
+          "trace": null,
+          "screenshot": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "firefox",
+      "browser": "firefox",
+      "device": null,
+      "mobile": false,
+      "pass": true,
+      "cases": [
+        {
+          "name": "kill write restore receipt",
+          "context": "fresh public judge path",
+          "steps": [
+            {
+              "action": "goto",
+              "path": "/",
+              "pass": true,
+              "elapsed_ms": 1184
+            },
+            {
+              "action": "waitFor",
+              "text": "Checkpoint live",
+              "pass": true,
+              "elapsed_ms": 1966
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 657
+            },
+            {
+              "action": "assertText",
+              "text": "Predecessor killed",
+              "pass": true,
+              "elapsed_ms": 207
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 739
+            },
+            {
+              "action": "waitFor",
+              "text": "Walrus pointer certified",
+              "pass": true,
+              "elapsed_ms": 11641
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 107
+            },
+            {
+              "action": "waitFor",
+              "text": "Scoped restore complete",
+              "pass": true,
+              "elapsed_ms": 5700
+            },
+            {
+              "action": "click",
+              "text": "Legal successor",
+              "pass": true,
+              "elapsed_ms": 148
+            },
+            {
+              "action": "waitFor",
+              "text": "role legal",
+              "pass": true,
+              "elapsed_ms": 6766
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 146
+            },
+            {
+              "action": "assertText",
+              "text": "Scoped restore ready",
+              "pass": true,
+              "elapsed_ms": 39
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 117
+            },
+            {
+              "action": "waitFor",
+              "text": "Proof inspected",
+              "pass": true,
+              "elapsed_ms": 276
+            },
+            {
+              "action": "screenshot",
+              "path": ".hunter/runtime-artifacts/kill-write-restore-receipt-success.png",
+              "pass": true,
+              "elapsed_ms": 187
+            },
+            {
+              "action": "reload",
+              "pass": true,
+              "elapsed_ms": 953
+            },
+            {
+              "action": "assertText",
+              "text": "Receipt reopened",
+              "pass": true,
+              "elapsed_ms": 406
+            },
+            {
+              "action": "assertText",
+              "text": "Scoped restore ready",
+              "pass": true,
+              "elapsed_ms": 32
+            }
+          ],
+          "pass": true,
+          "runtime_scan": {
+            "textLength": 3905,
+            "clickableCount": 12,
+            "questionableControlCount": 0,
+            "smells": []
+          },
+          "trace": null,
+          "screenshot": null
+        },
+        {
+          "name": "receipt reopen second context",
+          "context": "second browser receipt viewer",
+          "steps": [
+            {
+              "action": "goto",
+              "path": "/?will=latest",
+              "pass": true,
+              "elapsed_ms": 1604
+            },
+            {
+              "action": "waitFor",
+              "text": "Receipt reopened",
+              "pass": true,
+              "elapsed_ms": 1264
+            },
+            {
+              "action": "assertText",
+              "text": "Memory Will Receipt",
+              "pass": true,
+              "elapsed_ms": 36
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 157
+            },
+            {
+              "action": "waitFor",
+              "text": "Proof inspected",
+              "pass": true,
+              "elapsed_ms": 273
+            },
+            {
+              "action": "assertText",
+              "text": "Sui object",
+              "pass": true,
+              "elapsed_ms": 39
+            }
+          ],
+          "pass": true,
+          "runtime_scan": {
+            "textLength": 3932,
+            "clickableCount": 12,
+            "questionableControlCount": 0,
+            "smells": []
+          },
+          "trace": null,
+          "screenshot": null
+        },
+        {
+          "name": "negative missing receipt recovery",
+          "context": "fresh-error missing pointer recovery",
+          "steps": [
+            {
+              "action": "goto",
+              "path": "/?will=missing-will",
+              "pass": true,
+              "elapsed_ms": 1825
+            },
+            {
+              "action": "assertText",
+              "text": "No-success",
+              "pass": true,
+              "elapsed_ms": 1293
+            },
+            {
+              "action": "assertText",
+              "text": "Memory Will receipt not found.",
+              "pass": true,
+              "elapsed_ms": 36
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 116
+            },
+            {
+              "action": "waitFor",
+              "text": "Checkpoint live",
+              "pass": true,
+              "elapsed_ms": 916
+            }
+          ],
+          "pass": true,
+          "runtime_scan": {
+            "textLength": 2402,
+            "clickableCount": 8,
+            "questionableControlCount": 0,
+            "smells": []
+          },
+          "trace": null,
+          "screenshot": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "webkit",
+      "browser": "webkit",
+      "device": null,
+      "mobile": false,
+      "pass": false,
+      "cases": [
+        {
+          "name": "kill write restore receipt",
+          "context": "fresh public judge path",
+          "steps": [
+            {
+              "pass": false,
+              "error": "page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/\", waiting until \"commit\"\u001b[22m\n"
+            }
+          ],
+          "pass": false,
+          "runtime_scan": null,
+          "trace": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\webkit-kill-write-restore-receipt-1782066581767.zip",
+          "screenshot": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\webkit-kill-write-restore-receipt-1782066581767.png"
+        },
+        {
+          "name": "receipt reopen second context",
+          "context": "second browser receipt viewer",
+          "steps": [
+            {
+              "pass": false,
+              "error": "page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/?will=latest\", waiting until \"commit\"\u001b[22m\n"
+            }
+          ],
+          "pass": false,
+          "runtime_scan": null,
+          "trace": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\webkit-receipt-reopen-second-context-1782066630054.zip",
+          "screenshot": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\webkit-receipt-reopen-second-context-1782066630054.png"
+        },
+        {
+          "name": "negative missing receipt recovery",
+          "context": "fresh-error missing pointer recovery",
+          "steps": [
+            {
+              "pass": false,
+              "error": "page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/?will=missing-will\", waiting until \"commit\"\u001b[22m\n"
+            }
+          ],
+          "pass": false,
+          "runtime_scan": null,
+          "trace": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\webkit-negative-missing-receipt-recovery-1782066678357.zip",
+          "screenshot": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\webkit-negative-missing-receipt-recovery-1782066678357.png"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "iPhone 13",
+      "browser": "webkit",
+      "device": null,
+      "mobile": true,
+      "pass": false,
+      "cases": [
+        {
+          "name": "kill write restore receipt",
+          "context": "fresh public judge path",
+          "steps": [
+            {
+              "pass": false,
+              "error": "page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/\", waiting until \"commit\"\u001b[22m\n"
+            }
+          ],
+          "pass": false,
+          "runtime_scan": null,
+          "trace": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\iphone-13-kill-write-restore-receipt-1782066727074.zip",
+          "screenshot": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\iphone-13-kill-write-restore-receipt-1782066727074.png"
+        },
+        {
+          "name": "receipt reopen second context",
+          "context": "second browser receipt viewer",
+          "steps": [
+            {
+              "pass": false,
+              "error": "page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/?will=latest\", waiting until \"commit\"\u001b[22m\n"
+            }
+          ],
+          "pass": false,
+          "runtime_scan": null,
+          "trace": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\iphone-13-receipt-reopen-second-context-1782066775376.zip",
+          "screenshot": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\iphone-13-receipt-reopen-second-context-1782066775376.png"
+        },
+        {
+          "name": "negative missing receipt recovery",
+          "context": "fresh-error missing pointer recovery",
+          "steps": [
+            {
+              "pass": false,
+              "error": "page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/?will=missing-will\", waiting until \"commit\"\u001b[22m\n"
+            }
+          ],
+          "pass": false,
+          "runtime_scan": null,
+          "trace": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\iphone-13-negative-missing-receipt-recovery-1782066823048.zip",
+          "screenshot": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\iphone-13-negative-missing-receipt-recovery-1782066823048.png"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Pixel 7",
+      "browser": "chromium",
+      "device": null,
+      "mobile": true,
+      "pass": true,
+      "cases": [
+        {
+          "name": "kill write restore receipt",
+          "context": "fresh public judge path",
+          "steps": [
+            {
+              "action": "goto",
+              "path": "/",
+              "pass": true,
+              "elapsed_ms": 2707
+            },
+            {
+              "action": "waitFor",
+              "text": "Checkpoint live",
+              "pass": true,
+              "elapsed_ms": 2084
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 93
+            },
+            {
+              "action": "assertText",
+              "text": "Predecessor killed",
+              "pass": true,
+              "elapsed_ms": 22
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 103
+            },
+            {
+              "action": "waitFor",
+              "text": "Walrus pointer certified",
+              "pass": true,
+              "elapsed_ms": 11679
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 103
+            },
+            {
+              "action": "waitFor",
+              "text": "Scoped restore complete",
+              "pass": true,
+              "elapsed_ms": 8054
+            },
+            {
+              "action": "click",
+              "text": "Legal successor",
+              "pass": true,
+              "elapsed_ms": 62
+            },
+            {
+              "action": "waitFor",
+              "text": "role legal",
+              "pass": true,
+              "elapsed_ms": 3966
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 65
+            },
+            {
+              "action": "assertText",
+              "text": "Scoped restore ready",
+              "pass": true,
+              "elapsed_ms": 20
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 86
+            },
+            {
+              "action": "waitFor",
+              "text": "Proof inspected",
+              "pass": true,
+              "elapsed_ms": 249
+            },
+            {
+              "action": "screenshot",
+              "path": ".hunter/runtime-artifacts/kill-write-restore-receipt-success.png",
+              "pass": true,
+              "elapsed_ms": 351
+            },
+            {
+              "action": "reload",
+              "pass": true,
+              "elapsed_ms": 299
+            },
+            {
+              "action": "assertText",
+              "text": "Receipt reopened",
+              "pass": true,
+              "elapsed_ms": 383
+            },
+            {
+              "action": "assertText",
+              "text": "Scoped restore ready",
+              "pass": true,
+              "elapsed_ms": 21
+            }
+          ],
+          "pass": true,
+          "runtime_scan": {
+            "textLength": 3255,
+            "clickableCount": 12,
+            "questionableControlCount": 0,
+            "smells": []
+          },
+          "trace": null,
+          "screenshot": null
+        },
+        {
+          "name": "receipt reopen second context",
+          "context": "second browser receipt viewer",
+          "steps": [
+            {
+              "action": "goto",
+              "path": "/?will=latest",
+              "pass": true,
+              "elapsed_ms": 1654
+            },
+            {
+              "action": "waitFor",
+              "text": "Receipt reopened",
+              "pass": true,
+              "elapsed_ms": 1456
+            },
+            {
+              "action": "assertText",
+              "text": "Memory Will Receipt",
+              "pass": true,
+              "elapsed_ms": 26
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 108
+            },
+            {
+              "action": "waitFor",
+              "text": "Proof inspected",
+              "pass": true,
+              "elapsed_ms": 222
+            },
+            {
+              "action": "assertText",
+              "text": "Sui object",
+              "pass": true,
+              "elapsed_ms": 22
+            }
+          ],
+          "pass": true,
+          "runtime_scan": {
+            "textLength": 3280,
+            "clickableCount": 12,
+            "questionableControlCount": 0,
+            "smells": []
+          },
+          "trace": null,
+          "screenshot": null
+        },
+        {
+          "name": "negative missing receipt recovery",
+          "context": "fresh-error missing pointer recovery",
+          "steps": [
+            {
+              "action": "goto",
+              "path": "/?will=missing-will",
+              "pass": true,
+              "elapsed_ms": 1582
+            },
+            {
+              "action": "assertText",
+              "text": "No-success",
+              "pass": true,
+              "elapsed_ms": 1434
+            },
+            {
+              "action": "assertText",
+              "text": "Memory Will receipt not found.",
+              "pass": true,
+              "elapsed_ms": 19
+            },
+            {
+              "action": "click",
+              "role": "button",
+              "pass": true,
+              "elapsed_ms": 110
+            },
+            {
+              "action": "waitFor",
+              "text": "Checkpoint live",
+              "pass": true,
+              "elapsed_ms": 1890
+            }
+          ],
+          "pass": true,
+          "runtime_scan": {
+            "textLength": 2402,
+            "clickableCount": 8,
+            "questionableControlCount": 0,
+            "smells": []
+          },
+          "trace": null,
+          "screenshot": null
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "cases": [
+    {
+      "name": "kill write restore receipt",
+      "context": "fresh public judge path",
+      "steps": [
+        {
+          "action": "goto",
+          "path": "/",
+          "pass": true,
+          "elapsed_ms": 1704
+        },
+        {
+          "action": "waitFor",
+          "text": "Checkpoint live",
+          "pass": true,
+          "elapsed_ms": 2169
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 117
+        },
+        {
+          "action": "assertText",
+          "text": "Predecessor killed",
+          "pass": true,
+          "elapsed_ms": 25
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 95
+        },
+        {
+          "action": "waitFor",
+          "text": "Walrus pointer certified",
+          "pass": true,
+          "elapsed_ms": 10643
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 95
+        },
+        {
+          "action": "waitFor",
+          "text": "Scoped restore complete",
+          "pass": true,
+          "elapsed_ms": 8089
+        },
+        {
+          "action": "click",
+          "text": "Legal successor",
+          "pass": true,
+          "elapsed_ms": 89
+        },
+        {
+          "action": "waitFor",
+          "text": "role legal",
+          "pass": true,
+          "elapsed_ms": 3979
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 80
+        },
+        {
+          "action": "assertText",
+          "text": "Scoped restore ready",
+          "pass": true,
+          "elapsed_ms": 30
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 64
+        },
+        {
+          "action": "waitFor",
+          "text": "Proof inspected",
+          "pass": true,
+          "elapsed_ms": 369
+        },
+        {
+          "action": "screenshot",
+          "path": ".hunter/runtime-artifacts/kill-write-restore-receipt-success.png",
+          "pass": true,
+          "elapsed_ms": 351
+        },
+        {
+          "action": "reload",
+          "pass": true,
+          "elapsed_ms": 645
+        },
+        {
+          "action": "assertText",
+          "text": "Receipt reopened",
+          "pass": true,
+          "elapsed_ms": 380
+        },
+        {
+          "action": "assertText",
+          "text": "Scoped restore ready",
+          "pass": true,
+          "elapsed_ms": 26
+        }
+      ],
+      "pass": true,
+      "runtime_scan": {
+        "textLength": 3263,
+        "clickableCount": 12,
+        "questionableControlCount": 0,
+        "smells": []
+      },
+      "trace": null,
+      "screenshot": null,
+      "target": "chromium",
+      "browser": "chromium"
+    },
+    {
+      "name": "receipt reopen second context",
+      "context": "second browser receipt viewer",
+      "steps": [
+        {
+          "action": "goto",
+          "path": "/?will=latest",
+          "pass": true,
+          "elapsed_ms": 1560
+        },
+        {
+          "action": "waitFor",
+          "text": "Receipt reopened",
+          "pass": true,
+          "elapsed_ms": 975
+        },
+        {
+          "action": "assertText",
+          "text": "Memory Will Receipt",
+          "pass": true,
+          "elapsed_ms": 18
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 102
+        },
+        {
+          "action": "waitFor",
+          "text": "Proof inspected",
+          "pass": true,
+          "elapsed_ms": 276
+        },
+        {
+          "action": "assertText",
+          "text": "Sui object",
+          "pass": true,
+          "elapsed_ms": 20
+        }
+      ],
+      "pass": true,
+      "runtime_scan": {
+        "textLength": 3288,
+        "clickableCount": 12,
+        "questionableControlCount": 0,
+        "smells": []
+      },
+      "trace": null,
+      "screenshot": null,
+      "target": "chromium",
+      "browser": "chromium"
+    },
+    {
+      "name": "negative missing receipt recovery",
+      "context": "fresh-error missing pointer recovery",
+      "steps": [
+        {
+          "action": "goto",
+          "path": "/?will=missing-will",
+          "pass": true,
+          "elapsed_ms": 1558
+        },
+        {
+          "action": "assertText",
+          "text": "No-success",
+          "pass": true,
+          "elapsed_ms": 1421
+        },
+        {
+          "action": "assertText",
+          "text": "Memory Will receipt not found.",
+          "pass": true,
+          "elapsed_ms": 20
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 104
+        },
+        {
+          "action": "waitFor",
+          "text": "Checkpoint live",
+          "pass": true,
+          "elapsed_ms": 1375
+        }
+      ],
+      "pass": true,
+      "runtime_scan": {
+        "textLength": 2402,
+        "clickableCount": 8,
+        "questionableControlCount": 0,
+        "smells": []
+      },
+      "trace": null,
+      "screenshot": null,
+      "target": "chromium",
+      "browser": "chromium"
+    },
+    {
+      "name": "kill write restore receipt",
+      "context": "fresh public judge path",
+      "steps": [
+        {
+          "action": "goto",
+          "path": "/",
+          "pass": true,
+          "elapsed_ms": 1184
+        },
+        {
+          "action": "waitFor",
+          "text": "Checkpoint live",
+          "pass": true,
+          "elapsed_ms": 1966
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 657
+        },
+        {
+          "action": "assertText",
+          "text": "Predecessor killed",
+          "pass": true,
+          "elapsed_ms": 207
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 739
+        },
+        {
+          "action": "waitFor",
+          "text": "Walrus pointer certified",
+          "pass": true,
+          "elapsed_ms": 11641
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 107
+        },
+        {
+          "action": "waitFor",
+          "text": "Scoped restore complete",
+          "pass": true,
+          "elapsed_ms": 5700
+        },
+        {
+          "action": "click",
+          "text": "Legal successor",
+          "pass": true,
+          "elapsed_ms": 148
+        },
+        {
+          "action": "waitFor",
+          "text": "role legal",
+          "pass": true,
+          "elapsed_ms": 6766
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 146
+        },
+        {
+          "action": "assertText",
+          "text": "Scoped restore ready",
+          "pass": true,
+          "elapsed_ms": 39
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 117
+        },
+        {
+          "action": "waitFor",
+          "text": "Proof inspected",
+          "pass": true,
+          "elapsed_ms": 276
+        },
+        {
+          "action": "screenshot",
+          "path": ".hunter/runtime-artifacts/kill-write-restore-receipt-success.png",
+          "pass": true,
+          "elapsed_ms": 187
+        },
+        {
+          "action": "reload",
+          "pass": true,
+          "elapsed_ms": 953
+        },
+        {
+          "action": "assertText",
+          "text": "Receipt reopened",
+          "pass": true,
+          "elapsed_ms": 406
+        },
+        {
+          "action": "assertText",
+          "text": "Scoped restore ready",
+          "pass": true,
+          "elapsed_ms": 32
+        }
+      ],
+      "pass": true,
+      "runtime_scan": {
+        "textLength": 3905,
+        "clickableCount": 12,
+        "questionableControlCount": 0,
+        "smells": []
+      },
+      "trace": null,
+      "screenshot": null,
+      "target": "firefox",
+      "browser": "firefox"
+    },
+    {
+      "name": "receipt reopen second context",
+      "context": "second browser receipt viewer",
+      "steps": [
+        {
+          "action": "goto",
+          "path": "/?will=latest",
+          "pass": true,
+          "elapsed_ms": 1604
+        },
+        {
+          "action": "waitFor",
+          "text": "Receipt reopened",
+          "pass": true,
+          "elapsed_ms": 1264
+        },
+        {
+          "action": "assertText",
+          "text": "Memory Will Receipt",
+          "pass": true,
+          "elapsed_ms": 36
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 157
+        },
+        {
+          "action": "waitFor",
+          "text": "Proof inspected",
+          "pass": true,
+          "elapsed_ms": 273
+        },
+        {
+          "action": "assertText",
+          "text": "Sui object",
+          "pass": true,
+          "elapsed_ms": 39
+        }
+      ],
+      "pass": true,
+      "runtime_scan": {
+        "textLength": 3932,
+        "clickableCount": 12,
+        "questionableControlCount": 0,
+        "smells": []
+      },
+      "trace": null,
+      "screenshot": null,
+      "target": "firefox",
+      "browser": "firefox"
+    },
+    {
+      "name": "negative missing receipt recovery",
+      "context": "fresh-error missing pointer recovery",
+      "steps": [
+        {
+          "action": "goto",
+          "path": "/?will=missing-will",
+          "pass": true,
+          "elapsed_ms": 1825
+        },
+        {
+          "action": "assertText",
+          "text": "No-success",
+          "pass": true,
+          "elapsed_ms": 1293
+        },
+        {
+          "action": "assertText",
+          "text": "Memory Will receipt not found.",
+          "pass": true,
+          "elapsed_ms": 36
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 116
+        },
+        {
+          "action": "waitFor",
+          "text": "Checkpoint live",
+          "pass": true,
+          "elapsed_ms": 916
+        }
+      ],
+      "pass": true,
+      "runtime_scan": {
+        "textLength": 2402,
+        "clickableCount": 8,
+        "questionableControlCount": 0,
+        "smells": []
+      },
+      "trace": null,
+      "screenshot": null,
+      "target": "firefox",
+      "browser": "firefox"
+    },
+    {
+      "name": "kill write restore receipt",
+      "context": "fresh public judge path",
+      "steps": [
+        {
+          "pass": false,
+          "error": "page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/\", waiting until \"commit\"\u001b[22m\n"
+        }
+      ],
+      "pass": false,
+      "runtime_scan": null,
+      "trace": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\webkit-kill-write-restore-receipt-1782066581767.zip",
+      "screenshot": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\webkit-kill-write-restore-receipt-1782066581767.png",
+      "target": "webkit",
+      "browser": "webkit"
+    },
+    {
+      "name": "receipt reopen second context",
+      "context": "second browser receipt viewer",
+      "steps": [
+        {
+          "pass": false,
+          "error": "page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/?will=latest\", waiting until \"commit\"\u001b[22m\n"
+        }
+      ],
+      "pass": false,
+      "runtime_scan": null,
+      "trace": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\webkit-receipt-reopen-second-context-1782066630054.zip",
+      "screenshot": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\webkit-receipt-reopen-second-context-1782066630054.png",
+      "target": "webkit",
+      "browser": "webkit"
+    },
+    {
+      "name": "negative missing receipt recovery",
+      "context": "fresh-error missing pointer recovery",
+      "steps": [
+        {
+          "pass": false,
+          "error": "page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/?will=missing-will\", waiting until \"commit\"\u001b[22m\n"
+        }
+      ],
+      "pass": false,
+      "runtime_scan": null,
+      "trace": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\webkit-negative-missing-receipt-recovery-1782066678357.zip",
+      "screenshot": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\webkit-negative-missing-receipt-recovery-1782066678357.png",
+      "target": "webkit",
+      "browser": "webkit"
+    },
+    {
+      "name": "kill write restore receipt",
+      "context": "fresh public judge path",
+      "steps": [
+        {
+          "pass": false,
+          "error": "page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/\", waiting until \"commit\"\u001b[22m\n"
+        }
+      ],
+      "pass": false,
+      "runtime_scan": null,
+      "trace": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\iphone-13-kill-write-restore-receipt-1782066727074.zip",
+      "screenshot": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\iphone-13-kill-write-restore-receipt-1782066727074.png",
+      "target": "iPhone 13",
+      "browser": "webkit"
+    },
+    {
+      "name": "receipt reopen second context",
+      "context": "second browser receipt viewer",
+      "steps": [
+        {
+          "pass": false,
+          "error": "page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/?will=latest\", waiting until \"commit\"\u001b[22m\n"
+        }
+      ],
+      "pass": false,
+      "runtime_scan": null,
+      "trace": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\iphone-13-receipt-reopen-second-context-1782066775376.zip",
+      "screenshot": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\iphone-13-receipt-reopen-second-context-1782066775376.png",
+      "target": "iPhone 13",
+      "browser": "webkit"
+    },
+    {
+      "name": "negative missing receipt recovery",
+      "context": "fresh-error missing pointer recovery",
+      "steps": [
+        {
+          "pass": false,
+          "error": "page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/?will=missing-will\", waiting until \"commit\"\u001b[22m\n"
+        }
+      ],
+      "pass": false,
+      "runtime_scan": null,
+      "trace": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\iphone-13-negative-missing-receipt-recovery-1782066823048.zip",
+      "screenshot": "C:\\Users\\Ricky\\Documents\\Project\\SuiOverflow\\walrus-special-2026\\.hunter\\runtime-artifacts\\iphone-13-negative-missing-receipt-recovery-1782066823048.png",
+      "target": "iPhone 13",
+      "browser": "webkit"
+    },
+    {
+      "name": "kill write restore receipt",
+      "context": "fresh public judge path",
+      "steps": [
+        {
+          "action": "goto",
+          "path": "/",
+          "pass": true,
+          "elapsed_ms": 2707
+        },
+        {
+          "action": "waitFor",
+          "text": "Checkpoint live",
+          "pass": true,
+          "elapsed_ms": 2084
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 93
+        },
+        {
+          "action": "assertText",
+          "text": "Predecessor killed",
+          "pass": true,
+          "elapsed_ms": 22
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 103
+        },
+        {
+          "action": "waitFor",
+          "text": "Walrus pointer certified",
+          "pass": true,
+          "elapsed_ms": 11679
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 103
+        },
+        {
+          "action": "waitFor",
+          "text": "Scoped restore complete",
+          "pass": true,
+          "elapsed_ms": 8054
+        },
+        {
+          "action": "click",
+          "text": "Legal successor",
+          "pass": true,
+          "elapsed_ms": 62
+        },
+        {
+          "action": "waitFor",
+          "text": "role legal",
+          "pass": true,
+          "elapsed_ms": 3966
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 65
+        },
+        {
+          "action": "assertText",
+          "text": "Scoped restore ready",
+          "pass": true,
+          "elapsed_ms": 20
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 86
+        },
+        {
+          "action": "waitFor",
+          "text": "Proof inspected",
+          "pass": true,
+          "elapsed_ms": 249
+        },
+        {
+          "action": "screenshot",
+          "path": ".hunter/runtime-artifacts/kill-write-restore-receipt-success.png",
+          "pass": true,
+          "elapsed_ms": 351
+        },
+        {
+          "action": "reload",
+          "pass": true,
+          "elapsed_ms": 299
+        },
+        {
+          "action": "assertText",
+          "text": "Receipt reopened",
+          "pass": true,
+          "elapsed_ms": 383
+        },
+        {
+          "action": "assertText",
+          "text": "Scoped restore ready",
+          "pass": true,
+          "elapsed_ms": 21
+        }
+      ],
+      "pass": true,
+      "runtime_scan": {
+        "textLength": 3255,
+        "clickableCount": 12,
+        "questionableControlCount": 0,
+        "smells": []
+      },
+      "trace": null,
+      "screenshot": null,
+      "target": "Pixel 7",
+      "browser": "chromium"
+    },
+    {
+      "name": "receipt reopen second context",
+      "context": "second browser receipt viewer",
+      "steps": [
+        {
+          "action": "goto",
+          "path": "/?will=latest",
+          "pass": true,
+          "elapsed_ms": 1654
+        },
+        {
+          "action": "waitFor",
+          "text": "Receipt reopened",
+          "pass": true,
+          "elapsed_ms": 1456
+        },
+        {
+          "action": "assertText",
+          "text": "Memory Will Receipt",
+          "pass": true,
+          "elapsed_ms": 26
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 108
+        },
+        {
+          "action": "waitFor",
+          "text": "Proof inspected",
+          "pass": true,
+          "elapsed_ms": 222
+        },
+        {
+          "action": "assertText",
+          "text": "Sui object",
+          "pass": true,
+          "elapsed_ms": 22
+        }
+      ],
+      "pass": true,
+      "runtime_scan": {
+        "textLength": 3280,
+        "clickableCount": 12,
+        "questionableControlCount": 0,
+        "smells": []
+      },
+      "trace": null,
+      "screenshot": null,
+      "target": "Pixel 7",
+      "browser": "chromium"
+    },
+    {
+      "name": "negative missing receipt recovery",
+      "context": "fresh-error missing pointer recovery",
+      "steps": [
+        {
+          "action": "goto",
+          "path": "/?will=missing-will",
+          "pass": true,
+          "elapsed_ms": 1582
+        },
+        {
+          "action": "assertText",
+          "text": "No-success",
+          "pass": true,
+          "elapsed_ms": 1434
+        },
+        {
+          "action": "assertText",
+          "text": "Memory Will receipt not found.",
+          "pass": true,
+          "elapsed_ms": 19
+        },
+        {
+          "action": "click",
+          "role": "button",
+          "pass": true,
+          "elapsed_ms": 110
+        },
+        {
+          "action": "waitFor",
+          "text": "Checkpoint live",
+          "pass": true,
+          "elapsed_ms": 1890
+        }
+      ],
+      "pass": true,
+      "runtime_scan": {
+        "textLength": 2402,
+        "clickableCount": 8,
+        "questionableControlCount": 0,
+        "smells": []
+      },
+      "trace": null,
+      "screenshot": null,
+      "target": "Pixel 7",
+      "browser": "chromium"
+    }
+  ],
+  "errors": [
+    "[chromium console] Failed to load resource: the server responded with a status of 404 ()",
+    "[webkit requestfailed] https://memory-will-walrus-special.veithly.workers.dev/ Timeout was reached",
+    "[webkit console] Failed to load resource: Timeout was reached",
+    "[webkit / kill write restore receipt] page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/\", waiting until \"commit\"\u001b[22m\n",
+    "[webkit requestfailed] https://memory-will-walrus-special.veithly.workers.dev/?will=latest Timeout was reached",
+    "[webkit console] Failed to load resource: Timeout was reached",
+    "[webkit / receipt reopen second context] page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/?will=latest\", waiting until \"commit\"\u001b[22m\n",
+    "[webkit requestfailed] https://memory-will-walrus-special.veithly.workers.dev/?will=missing-will Timeout was reached",
+    "[webkit console] Failed to load resource: Timeout was reached",
+    "[webkit / negative missing receipt recovery] page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/?will=missing-will\", waiting until \"commit\"\u001b[22m\n",
+    "[iPhone 13 requestfailed] https://memory-will-walrus-special.veithly.workers.dev/ Timeout was reached",
+    "[iPhone 13 console] Failed to load resource: Timeout was reached",
+    "[iPhone 13 / kill write restore receipt] page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/\", waiting until \"commit\"\u001b[22m\n",
+    "[iPhone 13 requestfailed] https://memory-will-walrus-special.veithly.workers.dev/?will=latest Timeout was reached",
+    "[iPhone 13 console] Failed to load resource: Timeout was reached",
+    "[iPhone 13 / receipt reopen second context] page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/?will=latest\", waiting until \"commit\"\u001b[22m\n",
+    "[iPhone 13 requestfailed] https://memory-will-walrus-special.veithly.workers.dev/?will=missing-will Timeout was reached",
+    "[iPhone 13 console] Failed to load resource: Timeout was reached",
+    "[iPhone 13 / negative missing receipt recovery] page.goto: Timeout was reached\nCall log:\n\u001b[2m  - navigating to \"https://memory-will-walrus-special.veithly.workers.dev/?will=missing-will\", waiting until \"commit\"\u001b[22m\n",
+    "[Pixel 7 console] Failed to load resource: the server responded with a status of 404 ()"
+  ]
+}

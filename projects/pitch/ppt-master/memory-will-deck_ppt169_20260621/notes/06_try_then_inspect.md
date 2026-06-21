@@ -1,0 +1,1 @@
+The judge path is simple: open the live URL, click Kill Agent, write the will, open the cold successor, then inspect `/?will=latest`. Final hackathon form submission still requires explicit human approval.

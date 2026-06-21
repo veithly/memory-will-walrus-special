@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <radialGradient id="proofGlow" cx="38%" cy="44%" r="58%">
+      <stop offset="0%" stop-color="#4EC5F1" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#4EC5F1" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="truthGlow" cx="75%" cy="55%" r="44%">
+      <stop offset="0%" stop-color="#73F0B8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#73F0B8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <g id="background">
+    <rect x="0" y="0" width="1280" height="720" fill="#0B0F14" />
+    <rect x="0" y="0" width="1280" height="720" fill="url(#proofGlow)" />
+    <rect x="0" y="0" width="1280" height="720" fill="url(#truthGlow)" />
+    <path d="M90 120H1190 M90 600H1190" stroke="#223143" stroke-width="1.5" stroke-opacity="0.76" />
+  </g>
+  <g id="header">
+    <text x="90" y="62" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#A8B6C6" letter-spacing="2">SUI PROOF BOUNDARY</text>
+    <text x="1190" y="62" text-anchor="end" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#667789">05 / 06</text>
+  </g>
+  <g id="main-title">
+    <text font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" fill="#EAF1F7" font-weight="800" font-size="58" x="94" y="178">Sui is the</text><text font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" fill="#EAF1F7" font-weight="800" font-size="58" x="94" y="244">inspection layer,</text><text font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" fill="#EAF1F7" font-weight="800" font-size="58" x="94" y="310">not a made-up claim.</text><text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="22" x="98" y="404">The app reads Sui object metadata for the</text><text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="22" x="98" y="436">Walrus object returned by the real write path.</text></g>
+  <g id="proof-card">
+    <path fill="#121A24" stroke="#4EC5F1" stroke-width="2" d="M732,150 H1138 A12,12 0 0 1 1150,162 V498 A12,12 0 0 1 1138,510 H732 A12,12 0 0 1 720,498 V162 A12,12 0 0 1 732,150 Z" />
+    
+  <g transform="translate(760, 188) scale(1.66667)" fill="none" stroke="#4EC5F1" stroke-width="2">
+    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+    <path d="M5 8v-3a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-5" />
+    <path d="M3 14a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+    <path d="M4.5 17l-1.5 5l3 -1.5l3 1.5l-1.5 -5" />
+  </g>
+    <text x="816" y="214" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="28" font-weight="800" fill="#EAF1F7">Receipt proof fields</text>
+    <g id="fields">
+      <path fill="#0B0F14" stroke="#2B3A4B" stroke-width="1.3" d="M767,264 H1101 A7,7 0 0 1 1108,271 V299 A7,7 0 0 1 1101,306 H767 A7,7 0 0 1 760,299 V271 A7,7 0 0 1 767,264 Z" />
+      <text x="782" y="291" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#4EC5F1">walrus_object_id</text>
+      <path fill="#0B0F14" stroke="#2B3A4B" stroke-width="1.3" d="M767,320 H1101 A7,7 0 0 1 1108,327 V355 A7,7 0 0 1 1101,362 H767 A7,7 0 0 1 760,355 V327 A7,7 0 0 1 767,320 Z" />
+      <text x="782" y="347" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#73F0B8">checkpoint_hash</text>
+      <path fill="#0B0F14" stroke="#2B3A4B" stroke-width="1.3" d="M767,376 H1101 A7,7 0 0 1 1108,383 V411 A7,7 0 0 1 1101,418 H767 A7,7 0 0 1 760,411 V383 A7,7 0 0 1 767,376 Z" />
+      <text x="782" y="403" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#F7B955">policy_hash</text>
+      <path fill="#0B0F14" stroke="#2B3A4B" stroke-width="1.3" d="M767,432 H1101 A7,7 0 0 1 1108,439 V467 A7,7 0 0 1 1101,474 H767 A7,7 0 0 1 760,467 V439 A7,7 0 0 1 767,432 Z" />
+      <text x="782" y="459" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#A8B6C6">redaction_hash</text>
+    </g>
+  </g>
+  <g id="boundary-row">
+    <path fill="#071018" stroke="#73F0B8" stroke-width="1.7" d="M102,532 H420 A10,10 0 0 1 430,542 V616 A10,10 0 0 1 420,626 H102 A10,10 0 0 1 92,616 V542 A10,10 0 0 1 102,532 Z" />
+    
+  <g transform="translate(120, 560) scale(1.16667)" fill="none" stroke="#73F0B8" stroke-width="2">
+    <path d="M5 12l5 5l10 -10" />
+  </g>
+    <text x="160" y="562" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="18" font-weight="800" fill="#EAF1F7">Real proof path</text>
+    <text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="15" x="160" y="586">Sui object metadata is read</text><text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="15" x="160" y="608">for the Walrus object id.</text><path fill="#071018" stroke="#73F0B8" stroke-width="1.7" d="M480,532 H798 A10,10 0 0 1 808,542 V616 A10,10 0 0 1 798,626 H480 A10,10 0 0 1 470,616 V542 A10,10 0 0 1 480,532 Z" />
+    
+  <g transform="translate(498, 560) scale(1.16667)" fill="none" stroke="#73F0B8" stroke-width="2">
+    <path d="M7 4a2 2 0 0 0 -2 2v3a2 3 0 0 1 -2 3a2 3 0 0 1 2 3v3a2 2 0 0 0 2 2" />
+    <path d="M17 4a2 2 0 0 1 2 2v3a2 3 0 0 0 2 3a2 3 0 0 0 -2 3v3a2 2 0 0 1 -2 2" />
+  </g>
+    <text x="538" y="562" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="18" font-weight="800" fill="#EAF1F7">Move package included</text>
+    <text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="15" x="538" y="586">`MemoryWillAnchor` builds</text><text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="15" x="538" y="608">and tests locally.</text><path fill="#071018" stroke="#F7B955" stroke-width="1.7" d="M858,532 H1176 A10,10 0 0 1 1186,542 V616 A10,10 0 0 1 1176,626 H858 A10,10 0 0 1 848,616 V542 A10,10 0 0 1 858,532 Z" />
+    
+  <g transform="translate(876, 560) scale(1.16667)" fill="none" stroke="#F7B955" stroke-width="2">
+    <path d="M12 9v4" />
+    <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0" />
+    <path d="M12 16h.01" />
+  </g>
+    <text x="916" y="562" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="18" font-weight="800" fill="#EAF1F7">No publish overclaim</text>
+    <text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="15" x="916" y="586">Registry is not called published</text><text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="15" x="916" y="608">without package id and signer.</text></g>
+  <g id="footer">
+    <text font-family="Consolas, 'Courier New', monospace" fill="#667789" font-size="13" x="90" y="666">docs/sui-walrus-proof.md · move/sources/memory_will_registry.move</text><text font-family="Consolas, 'Courier New', monospace" fill="#667789" font-size="13" x="90" y="686">src/lib/memory-will/sui-proof.ts</text></g>
+</svg>

@@ -1,0 +1,21 @@
+# Build
+
+- Spec source: `pitch/gpt-pro/responses/spec/01-best-prd-response.md` and `pitch/gpt-pro/responses/spec/02-best-uiux-response.md`
+- GPT Pro upstream used: yes
+- GPT Pro PRD response path: `pitch/gpt-pro/responses/spec/01-best-prd-response.md`
+- GPT Pro UIUX response path: `pitch/gpt-pro/responses/spec/02-best-uiux-response.md`
+- Hero user: a research/product lead whose long-running AI task needs to survive agent death and scoped handoff.
+- One action: kill a predecessor agent and choose what a successor can inherit.
+- Before -> after: volatile in-progress agent context -> durable Walrus/MemWal Memory Will reopened by a cold successor.
+- Result artifact: Memory Will Receipt with pointer, scopes, redactions, replay trace, and restored output.
+- Wallet required for P0 Web3 result: no.
+- Web3/wallet play path if applicable: not applicable for P0 because the judge does not claim, mint, pay, trade, or sign an owned chain object.
+- No-wallet exception if applicable: server-issued Walrus storage proof and Sui object metadata inspection; the user-facing result is a receipt and restore path, not an owned wallet asset.
+- Required integration: AI/model output plus Walrus/MemWal write/read/restore or honest degraded state.
+- Six-month product guarantee: durable will creation, cold scoped restore, inspectable receipt with no false-success handoffs.
+- Three things to build: public workbench kill loop; Memory Will write/read/restore adapter; receipt/inspect/reopen path.
+- Three things to cut: general agent framework; enterprise identity; broad workflow templates.
+- Proof command or inspection path: `node C:\Users\Ricky\Documents\Project\hackathonhunter-skill\scripts\audit_project.mjs . --phase feature-density,claims,runtime,realness,agent-realness`; app inspection path is `/?will=latest` -> `Inspect Proof`.
+- Public URL: `https://memory-will-walrus-special.veithly.workers.dev`.
+- Desktop screenshot: `.hunter/runtime-artifacts/g5-public-desktop-proof.png`.
+- Mobile screenshot: `.hunter/runtime-artifacts/g5-public-mobile-proof.png`.

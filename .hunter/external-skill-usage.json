@@ -1,0 +1,130 @@
+{
+  "entries": [
+    {
+      "skill": "hackathonhunter",
+      "installed_path": "C:/Users/Ricky/Documents/Project/hackathonhunter-skill/SKILL.md",
+      "loaded_at": "2026-06-20T20:20:00Z",
+      "why_used": "The user required a new project following the Hunter flow from the local skill directory.",
+      "output_file": ".hunter/pipeline-plan.md",
+      "evidence_summary": "Read SKILL.md and full-mode orchestration references before creating gate artifacts.",
+      "fallback_if_missing": "Stop the project and ask for the correct Hunter skill path.",
+      "status": "used"
+    },
+    {
+      "skill": "planning-with-files",
+      "installed_path": "C:/Users/Ricky/.skills-manager/skills/planning-with-files/SKILL.md",
+      "loaded_at": "2026-06-20T20:21:00Z",
+      "why_used": "The project spans research, ideation, specs, implementation, verification, and submission packaging.",
+      "output_file": "task_plan.md",
+      "evidence_summary": "Created persistent plan and notes before the gate work continued.",
+      "fallback_if_missing": "Use Hunter pipeline files directly as the persistent work tracker.",
+      "status": "used"
+    },
+    {
+      "skill": "gpt-pro-think",
+      "installed_path": "C:/Users/Ricky/.skills-manager/skills/gpt-pro-think/SKILL.md",
+      "loaded_at": "2026-06-20T20:30:00Z",
+      "why_used": "Full Hunter tournament mode requires isolated GPT Pro research, ideation, judging, PRD, and UIUX cycles.",
+      "output_file": "pitch/gpt-pro/responses/spec/02-best-uiux-response.md",
+      "evidence_summary": "Saved separate R0, I1-I3, J1-J3, PRD, and UIUX prompt and response files with runner state records.",
+      "fallback_if_missing": "Stop at the Hunter gate and report the browser or GPT Pro session blocker.",
+      "status": "used"
+    },
+    {
+      "skill": "design-taste-frontend",
+      "installed_path": "C:/Users/Ricky/.skills-manager/skills/design-taste-frontend/SKILL.md",
+      "loaded_at": "2026-06-20T22:05:00Z",
+      "why_used": "G3 needs anti-template direction for a product UI that cannot read as a generic AI dashboard or landing page.",
+      "output_file": "pitch/visual-build-contract.md",
+      "evidence_summary": "Applied the design read, anti-default discipline, component-system choice, and pre-flight constraints to the visual contract.",
+      "fallback_if_missing": "Block G3 and ask the user to install the required design skill or approve a named fallback.",
+      "status": "used"
+    },
+    {
+      "skill": "impeccable",
+      "installed_path": "C:/Users/Ricky/.skills-manager/skills/impeccable/SKILL.md",
+      "loaded_at": "2026-06-20T22:08:00Z",
+      "why_used": "G3 needs product-register setup, color strategy, accessibility, motion restraint, and UI audit constraints before build.",
+      "output_file": "PRODUCT.md",
+      "evidence_summary": "Ran context setup, followed init/product register guidance, wrote PRODUCT.md, and used the palette seed for restrained OKLCH tokens.",
+      "fallback_if_missing": "Block frontend work and ask the user to install the required impeccable skill or approve a named fallback.",
+      "status": "used"
+    },
+    {
+      "skill": "logo-generator",
+      "installed_path": "C:/Users/Ricky/.skills-manager/skills/logo-generator/SKILL.md",
+      "loaded_at": "2026-06-20T22:12:00Z",
+      "why_used": "The PRD reserves a restrained Memory Will wordmark and G3 requires a brand asset pack.",
+      "output_file": "pitch/logo-showcase/memory-will-logo-showcase.html",
+      "evidence_summary": "Read the workflow and design patterns, generated six SVG variants, and selected the will-ring mark for public brand files.",
+      "fallback_if_missing": "Block brand asset creation and ask the user to install logo-generator or approve a named fallback.",
+      "status": "used"
+    },
+    {
+      "skill": "hyperframes",
+      "installed_path": "C:/Users/Ricky/.skills-manager/skills/hyperframes/SKILL.md",
+      "loaded_at": "2026-06-20T22:18:00Z",
+      "why_used": "The locked delivery mode is a combined pitch and product demo video after G4 and G5 are green.",
+      "output_file": "artifacts/video/memory-will-demo-final.mp4",
+      "evidence_summary": "Rendered the final HyperFrames demo video from real browser footage, measured Mimo narration, captions, and ambient bed; lint/inspect and black/silence checks passed with recorded QA assets.",
+      "fallback_if_missing": "Block polished video work and ask the user to install HyperFrames or approve a named fallback.",
+      "status": "used"
+    },
+    {
+      "skill": "stop-slop",
+      "installed_path": "C:/Users/Ricky/.skills-manager/skills/stop-slop/SKILL.md",
+      "loaded_at": "2026-06-20T22:20:00Z",
+      "why_used": "The entry surface already contains public-facing English copy for the judge's first five seconds.",
+      "output_file": "src/app/page.tsx",
+      "evidence_summary": "Reviewed hero, CTA, receipt, and state labels for filler phrases, formulaic structures, hype, em dashes, and vague claims.",
+      "fallback_if_missing": "Block public copy shipping and ask the user to install stop-slop or approve a named fallback.",
+      "status": "used"
+    },
+    {
+      "skill": "humanizer",
+      "installed_path": "C:/Users/Ricky/.skills-manager/skills/humanizer/SKILL.md",
+      "loaded_at": "2026-06-20T22:22:00Z",
+      "why_used": "The project language is English and the current hero copy must sound like product UI, not generated prose.",
+      "output_file": "src/app/page.tsx",
+      "evidence_summary": "Checked current copy for promotional language, rule-of-three rhythm, passive voice, curly quotes, title-case excess, and chatbot phrasing.",
+      "fallback_if_missing": "Block public English copy shipping and ask the user to install humanizer or approve a named fallback.",
+      "status": "used"
+    },
+    {
+      "skill": "stop-slop",
+      "installed_path": "C:/Users/Ricky/.skills-manager/skills/stop-slop/SKILL.md",
+      "loaded_at": "2026-06-20T23:34:00Z",
+      "why_used": "G6 public README and submission copy must avoid hype, filler, formulaic AI structures, and unsupported claims.",
+      "output_file": [
+        "README.md",
+        "SUBMISSION.md"
+      ],
+      "evidence_summary": "Reviewed updated README and submission draft for direct product copy, unsupported claims, formulaic hype, stale URLs, and AI-writing tells after final deck/video paths changed.",
+      "fallback_if_missing": "Block G6 human copy and ask for the required skill or explicit fallback.",
+      "status": "used"
+    },
+    {
+      "skill": "humanizer",
+      "installed_path": "C:/Users/Ricky/.skills-manager/skills/humanizer/SKILL.md",
+      "loaded_at": "2026-06-20T23:35:00Z",
+      "why_used": "The public package is English, so Hunter requires the English humanizer pass before finalizing README and submission copy.",
+      "output_file": [
+        "README.md",
+        "SUBMISSION.md"
+      ],
+      "evidence_summary": "Checked updated package copy for promotional language, inflated significance, rule-of-three pressure, passive voice, vague attribution, and stale artifact claims.",
+      "fallback_if_missing": "Block public English copy shipping and ask the user to install humanizer or approve a named fallback.",
+      "status": "used"
+    },
+    {
+      "skill": "ppt-master",
+      "installed_path": "C:/Users/Ricky/.skills-manager/skills/ppt-master/SKILL.md",
+      "loaded_at": "2026-06-20T23:39:00Z",
+      "why_used": "Hunter requires ppt-master before deck work. The skill was read to verify its blocking workflow before any deck artifact is created.",
+      "output_file": "projects/pitch/ppt-master/memory-will-deck_ppt169_20260621/exports/memory-will-deck_20260621_232345.pptx",
+      "evidence_summary": "Generated the final 6-slide ppt-master deck, reran svg_quality_checker.py with 6/6 pass, split 6 speaker-note pages, finalized SVGs, and exported native PPTX plus SVG reference.",
+      "fallback_if_missing": "Do not create the deck; ask the user to install ppt-master or approve a named fallback.",
+      "status": "used"
+    }
+  ]
+}

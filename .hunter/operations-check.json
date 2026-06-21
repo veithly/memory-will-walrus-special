@@ -1,0 +1,14 @@
+{
+  "$schema": "operations-check.v1",
+  "last_refreshed_at": "2026-06-21T14:08:10+08:00",
+  "last_refresh_reason": "Revalidated after stack no-wallet policy repair, G0 evidence repair, runtime wait-threshold hardening, and fresh public runtime audit.",
+  "fresh_user_hero_path": "Playwright runtime case 'kill write restore receipt' runs in fresh browser contexts, clicks Kill Agent, writes Walrus Memory Will, restores successor, inspects proof, screenshots success, and reloads the receipt.",
+  "public_access": "Guest public access with no login: /api/workspace/init issues an anonymous owner session cookie and a public visitor can complete the hero path without builder browser state.",
+  "reset_or_seed_strategy": "Each fresh runtime context creates an isolated owner session, workspace id, task id, checkpoint id, and will id; Start New Run creates a new owner-scoped run while prior receipts remain reopenable.",
+  "abuse_limits": "P0 keeps a small per-session guided task, caps model output tokens, writes one compact Walrus payload per will, and blocks restore until a pointer exists to limit provider and storage cost.",
+  "runtime_interaction_report": ".hunter/runtime-interaction.report.json",
+  "claim_matrix": ".hunter/claim-matrix.json",
+  "second_context_or_role_proof": "Runtime case 'receipt reopen second context' opens /?will=latest from a second browser context, inspects proof, and the first case switches Finance to Legal role to create distinct live outputs.",
+  "support_contact_or_failure_state": "No-success banner names the provider, Walrus, or receipt failure and exposes Start New Run retry; restore and write APIs return noSuccess JSON instead of success when dependencies fail.",
+  "last_verified_at": "2026-06-21T05:56:54.751Z"
+}

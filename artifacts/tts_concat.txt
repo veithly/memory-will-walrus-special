@@ -1,0 +1,6 @@
+file 'C:\Users\Ricky\Documents\Project\SuiOverflow\walrus-special-2026\artifacts\tts_chunks\01_hook.wav'
+file 'C:\Users\Ricky\Documents\Project\SuiOverflow\walrus-special-2026\artifacts\tts_chunks\02_pressure.wav'
+file 'C:\Users\Ricky\Documents\Project\SuiOverflow\walrus-special-2026\artifacts\tts_chunks\03_live_action.wav'
+file 'C:\Users\Ricky\Documents\Project\SuiOverflow\walrus-special-2026\artifacts\tts_chunks\04_result.wav'
+file 'C:\Users\Ricky\Documents\Project\SuiOverflow\walrus-special-2026\artifacts\tts_chunks\05_inspection.wav'
+file 'C:\Users\Ricky\Documents\Project\SuiOverflow\walrus-special-2026\artifacts\tts_chunks\06_reopen.wav'

@@ -1,0 +1,40 @@
+{
+  "canvas": "ppt169",
+  "page_count": "6",
+  "audience": "Sui Overflow judges reviewing Special - Walrus submissions asynchronously. They need the first action, real Walrus dependency, Sui proof boundary, and try-it path in under three minutes.",
+  "content_divergence": "Balanced: restructure the source into a tight pitch, keep all claims sourced, and do not add unsupported chain or publish claims.",
+  "mode": "narrative",
+  "visual_style": "dark-tech",
+  "color": {
+    "name": "Cold-start dark",
+    "palette": {
+      "background": "#0B0F14",
+      "secondary_bg": "#121A24",
+      "primary": "#4EC5F1",
+      "accent": "#73F0B8",
+      "secondary_accent": "#F7B955",
+      "body_text": "#EAF1F7"
+    }
+  },
+  "icons": "tabler-outline",
+  "typography": {
+    "name": "Product pitch sans",
+    "heading": {
+      "cjk": "Microsoft YaHei",
+      "latin": "Aptos Display",
+      "css": "\"Aptos Display\", \"Microsoft YaHei\", Arial, sans-serif"
+    },
+    "body": {
+      "cjk": "Microsoft YaHei",
+      "latin": "Aptos",
+      "css": "Aptos, \"Microsoft YaHei\", Arial, sans-serif"
+    },
+    "body_size": 18
+  },
+  "formula_policy": "text-only",
+  "image_usage": "provided",
+  "generation_mode": "continuous",
+  "refine_spec": false,
+  "status": "confirmed",
+  "confirmed_at": "2026-06-21T15:51:00+08:00"
+}

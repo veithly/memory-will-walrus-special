@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="flowGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4EC5F1" stop-opacity="0.18"/>
+      <stop offset="54%" stop-color="#73F0B8" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#F7B955" stop-opacity="0.08"/>
+    </linearGradient>
+    <filter id="softAccent" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#73F0B8" flood-opacity="0.28" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="background">
+    <rect x="0" y="0" width="1280" height="720" fill="#0B0F14"/>
+    <rect x="0" y="0" width="1280" height="720" fill="url(#flowGlow)"/>
+    <path d="M56 110H1224 M56 614H1224" stroke="#223143" stroke-width="1.5" stroke-opacity="0.82"/>
+    <path d="M128 160V574 M416 160V574 M704 160V574 M992 160V574" stroke="#223143" stroke-width="1" stroke-opacity="0.28"/>
+  </g>
+  <g id="header">
+    <text x="56" y="58" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#A8B6C6" letter-spacing="2">LIVE RUN SEQUENCE</text>
+    <text x="1224" y="58" text-anchor="end" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#667789">03 / 06</text>
+    <text x="56" y="124" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="40" font-weight="800" fill="#EAF1F7">The demo is one recoverable product loop.</text>
+  </g>
+  <g id="flow-line">
+    <path d="M162 352H354 M386 352H578 M610 352H802 M834 352H1026" stroke="#4EC5F1" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="370" cy="352" r="18" fill="#0B0F14" stroke="#4EC5F1" stroke-width="3"/>
+    <use data-icon="tabler-outline/arrow-right" x="358" y="340" width="24" height="24" fill="#4EC5F1" stroke-width="2"/>
+    <circle cx="594" cy="352" r="18" fill="#0B0F14" stroke="#4EC5F1" stroke-width="3"/>
+    <use data-icon="tabler-outline/arrow-right" x="582" y="340" width="24" height="24" fill="#4EC5F1" stroke-width="2"/>
+    <circle cx="818" cy="352" r="18" fill="#0B0F14" stroke="#4EC5F1" stroke-width="3"/>
+    <use data-icon="tabler-outline/arrow-right" x="806" y="340" width="24" height="24" fill="#4EC5F1" stroke-width="2"/>
+  </g>
+  <g id="step-kill">
+    <rect x="72" y="198" width="244" height="286" rx="10" fill="#121A24" stroke="#2B3A4B" stroke-width="2"/>
+    <circle cx="132" cy="258" r="34" fill="#F7B955" fill-opacity="0.12" stroke="#F7B955" stroke-width="2"/>
+    <use data-icon="tabler-outline/skull" x="112" y="238" width="40" height="40" fill="#F7B955" stroke-width="2"/>
+    <text x="104" y="326" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#667789">01 ACTION</text>
+    <text x="104" y="360" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="27" font-weight="800" fill="#EAF1F7">Kill Agent</text>
+    <text x="104" y="402" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#A8B6C6">
+      <tspan x="104" dy="0">The predecessor stops.</tspan>
+      <tspan x="104" dy="26">The judge chooses what</tspan>
+      <tspan x="104" dy="26">can survive.</tspan>
+    </text>
+  </g>
+  <g id="step-write">
+    <rect x="360" y="198" width="244" height="286" rx="10" fill="#121A24" stroke="#4EC5F1" stroke-width="2"/>
+    <circle cx="420" cy="258" r="34" fill="#4EC5F1" fill-opacity="0.12" stroke="#4EC5F1" stroke-width="2"/>
+    <use data-icon="tabler-outline/cloud" x="400" y="238" width="40" height="40" fill="#4EC5F1" stroke-width="2"/>
+    <text x="392" y="326" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#667789">02 WALRUS WRITE</text>
+    <text x="392" y="360" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="27" font-weight="800" fill="#EAF1F7">Store will</text>
+    <text x="392" y="402" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#A8B6C6">
+      <tspan x="392" dy="0">`/api/memory-wills` writes</tspan>
+      <tspan x="392" dy="26">the scoped JSON before</tspan>
+      <tspan x="392" dy="26">restore is enabled.</tspan>
+    </text>
+  </g>
+  <g id="step-restore">
+    <rect x="648" y="198" width="244" height="286" rx="10" fill="#121A24" stroke="#73F0B8" stroke-width="2" filter="url(#softAccent)"/>
+    <circle cx="708" cy="258" r="34" fill="#73F0B8" fill-opacity="0.12" stroke="#73F0B8" stroke-width="2"/>
+    <use data-icon="tabler-outline/route" x="688" y="238" width="40" height="40" fill="#73F0B8" stroke-width="2"/>
+    <text x="680" y="326" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#667789">03 WALRUS READ</text>
+    <text x="680" y="360" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="27" font-weight="800" fill="#EAF1F7">Open successor</text>
+    <text x="680" y="402" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#A8B6C6">
+      <tspan x="680" dy="0">A cold successor reads</tspan>
+      <tspan x="680" dy="26">the Walrus blob before</tspan>
+      <tspan x="680" dy="26">producing output.</tspan>
+    </text>
+  </g>
+  <g id="step-inspect">
+    <rect x="936" y="198" width="244" height="286" rx="10" fill="#121A24" stroke="#2B3A4B" stroke-width="2"/>
+    <circle cx="996" cy="258" r="34" fill="#4EC5F1" fill-opacity="0.12" stroke="#4EC5F1" stroke-width="2"/>
+    <use data-icon="tabler-outline/file-certificate" x="976" y="238" width="40" height="40" fill="#4EC5F1" stroke-width="2"/>
+    <text x="968" y="326" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#667789">04 INSPECT</text>
+    <text x="968" y="360" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="27" font-weight="800" fill="#EAF1F7">Read proof</text>
+    <text x="968" y="402" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#A8B6C6">
+      <tspan x="968" dy="0">Receipt exposes object id,</tspan>
+      <tspan x="968" dy="26">policy hash, and redaction</tspan>
+      <tspan x="968" dy="26">hash for review.</tspan>
+    </text>
+  </g>
+  <g id="bottom-proof">
+    <rect x="82" y="552" width="1098" height="58" rx="10" fill="#071018" stroke="#2B3A4B" stroke-width="1.5"/>
+    <use data-icon="tabler-outline/terminal" x="112" y="568" width="26" height="26" fill="#73F0B8" stroke-width="2"/>
+    <text x="152" y="576" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#73F0B8">verified commands</text>
+    <text x="152" y="600" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#A8B6C6">`pnpm build` · `pnpm typecheck` · `pnpm sui:build` · `pnpm sui:test` all pass sequentially.</text>
+  </g>
+</svg>

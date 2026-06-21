@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#4EC5F1" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#4EC5F1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="background">
+    <rect x="0" y="0" width="1280" height="720" fill="#0B0F14"/>
+    <rect x="0" y="0" width="1280" height="720" fill="url(#bgGlow)"/>
+    <path d="M56 112H1224 M56 608H1224" stroke="#223143" stroke-width="1.5" stroke-opacity="0.8"/>
+  </g>
+  <g id="header">
+    <text x="56" y="58" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#A8B6C6" letter-spacing="2">SCOPE BEFORE SUCCESSION</text>
+    <text x="1224" y="58" text-anchor="end" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#667789">02 / 06</text>
+    <text x="56" y="124" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="40" font-weight="800" fill="#EAF1F7">The successor needs memory and restraint.</text>
+  </g>
+  <g id="allowed-panel">
+    <rect x="72" y="178" width="520" height="350" rx="10" fill="#121A24" stroke="#73F0B8" stroke-width="2"/>
+    <use data-icon="tabler-outline/check" x="104" y="210" width="32" height="32" fill="#73F0B8" stroke-width="2"/>
+    <text x="150" y="236" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="28" font-weight="800" fill="#EAF1F7">Allowed memory</text>
+    <text x="104" y="284" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="19" fill="#A8B6C6">
+      <tspan x="104" dy="0">Vendor shortlist with sourced findings</tspan>
+      <tspan x="104" dy="42">Open questions for the next agent</tspan>
+      <tspan x="104" dy="42">Next step from the locked checkpoint</tspan>
+      <tspan x="104" dy="42">Role-specific successor instruction</tspan>
+    </text>
+    <rect x="104" y="462" width="330" height="38" rx="19" fill="#73F0B8" fill-opacity="0.14" stroke="#73F0B8" stroke-width="1.5"/>
+    <text x="124" y="486" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#73F0B8">safe to restore after Walrus read</text>
+  </g>
+  <g id="blocked-panel">
+    <rect x="688" y="178" width="520" height="350" rx="10" fill="#121A24" stroke="#F7B955" stroke-width="2"/>
+    <use data-icon="tabler-outline/lock" x="720" y="210" width="32" height="32" fill="#F7B955" stroke-width="2"/>
+    <text x="766" y="236" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="28" font-weight="800" fill="#EAF1F7">Unavailable memory</text>
+    <text x="720" y="284" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="19" fill="#A8B6C6">
+      <tspan x="720" dy="0">Private budget ceiling</tspan>
+      <tspan x="720" dy="42">Procurement timing notes</tspan>
+      <tspan x="720" dy="42">Unverified vendor preference</tspan>
+      <tspan x="720" dy="42">Any blocked scope the judge toggles</tspan>
+    </text>
+    <rect x="720" y="462" width="340" height="38" rx="19" fill="#F7B955" fill-opacity="0.14" stroke="#F7B955" stroke-width="1.5"/>
+    <text x="740" y="486" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#F7B955">must be named, not leaked</text>
+  </g>
+  <g id="center-boundary">
+    <line x1="640" y1="182" x2="640" y2="528" stroke="#2B3A4B" stroke-width="2" stroke-dasharray="8,8"/>
+    <circle cx="640" cy="352" r="42" fill="#0B0F14" stroke="#4EC5F1" stroke-width="2"/>
+    <use data-icon="tabler-outline/shield-check" x="620" y="332" width="40" height="40" fill="#4EC5F1" stroke-width="2"/>
+  </g>
+  <g id="takeaway">
+    <rect x="184" y="574" width="912" height="72" rx="10" fill="#071018" stroke="#2B3A4B" stroke-width="1.5"/>
+    <text x="220" y="606" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="20" font-weight="700" fill="#EAF1F7">The user decides what survives before any successor runs.</text>
+    <text x="220" y="632" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="16" fill="#A8B6C6">That is the product difference from a saved chat summary.</text>
+  </g>
+</svg>

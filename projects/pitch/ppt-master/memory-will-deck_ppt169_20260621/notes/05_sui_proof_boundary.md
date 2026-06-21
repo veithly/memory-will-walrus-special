@@ -1,0 +1,1 @@
+The Sui claim is intentionally bounded. The app reads Sui object metadata for the Walrus object id, and the repo includes a Move package that builds and tests locally. We do not claim the registry is published unless package id and signer are configured.

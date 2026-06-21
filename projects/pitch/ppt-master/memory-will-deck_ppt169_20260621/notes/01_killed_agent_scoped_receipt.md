@@ -1,0 +1,1 @@
+Memory Will is a working handoff surface for agent succession. The first click kills the predecessor agent, the user chooses what can survive, and the app returns a receipt instead of a generic saved chat summary.

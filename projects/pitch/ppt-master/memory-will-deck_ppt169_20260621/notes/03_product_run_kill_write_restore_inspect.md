@@ -1,0 +1,1 @@
+The live run is a four-step loop: Kill Agent, write the scoped will to Walrus, open a cold successor through a Walrus read, and inspect the receipt. Build, typecheck, Sui build, and Sui tests have all passed sequentially.

@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:06,240
+A reviewer clicks Kill Agent and gets a Memory Will receipt with a Walrus blob id.
+
+2
+00:00:06,240 --> 00:00:11,520
+Private budget notes stay blocked while the successor reads approved memory.
+
+3
+00:00:11,520 --> 00:00:16,160
+Now write the will to Walrus, then open the cold successor.
+
+4
+00:00:16,160 --> 00:00:23,680
+Receipt fields show blob id, redactions, replay trace, role, and model output hash.
+
+5
+00:00:23,680 --> 00:00:28,320
+Inspect Proof reads Walrus plus Sui object fields.
+
+6
+00:00:28,320 --> 00:00:33,440
+In a second browser context, the latest-will path opens the same receipt.

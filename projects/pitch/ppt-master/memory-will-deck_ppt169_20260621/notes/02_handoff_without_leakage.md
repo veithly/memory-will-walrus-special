@@ -1,0 +1,1 @@
+The core product choice is scoped inheritance. Approved memory becomes restorable, but blocked memory stays named and unavailable. That makes the handoff useful without pretending all prior context should be inherited.

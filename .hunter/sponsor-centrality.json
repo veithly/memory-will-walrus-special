@@ -1,0 +1,22 @@
+{
+  "primary_prize": "Sui Overflow 2026 - Special - Walrus",
+  "primary_sponsor": {
+    "name": "Walrus",
+    "primitive": "Walrus Publisher/Aggregator durable blob storage plus Sui object metadata for proof inspection",
+    "centrality_score": 9.4,
+    "score_reason": "The public action does not complete until the Memory Will is written to Walrus and then read back before successor output. Removing Walrus turns the product into a local chat handoff and breaks the visible restore outcome."
+  },
+  "core_user_action": "Click Kill Agent, scope allowed memory, write the Memory Will, and open a cold successor.",
+  "visible_outcome": "The successor resumes from approved memory only, and the receipt shows Walrus/Sui identifiers, redactions, replay trace, and output hash.",
+  "proof_surface": "/api/memory-wills, /api/successor/restore, /api/proof/[willId], Memory Will Receipt, .hunter/runtime-interaction.report.json",
+  "removal_breaks": "Without Walrus the user cannot prove that a cold successor restored from durable scoped memory rather than hidden local state or a pasted summary.",
+  "non_primary_sponsors": [
+    {
+      "name": "Sui",
+      "role": "Supporting proof layer for Walrus object metadata inspection",
+      "public_copy_allowed": true,
+      "why_not_primary": "The prize target is Special - Walrus; Sui proof supports the receipt but is not the winning thesis."
+    }
+  ],
+  "judge_sentence": "Walrus write/read -> killed-agent memory succession -> receipt and cold successor restore"
+}

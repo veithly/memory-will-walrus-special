@@ -1,0 +1,119 @@
+{
+  "challenge_type": "Web3 AI agent memory and verifiable data track",
+  "hackathon_url": "https://www.deepsurge.xyz/hackathons/b587dc0c-4cb8-4e63-ada5-519df38103bf",
+  "hackathon_content_language": "en",
+  "language_source_url": "https://www.deepsurge.xyz/api/hackathons/b587dc0c-4cb8-4e63-ada5-519df38103bf",
+  "language_source_sample": "Sui Overflow 2026 is Sui's flagship global hackathon, bringing together builders worldwide to ship real, production-ready applications.",
+  "user_requested_language": "zh for agent discussion; English for project artifacts",
+  "project_language": "en",
+  "project_language_reason": "DeepSurge event and expected submission fields are English; code, UI, README, video, and submission copy stay English.",
+  "deadline": "2026-06-22T01:00:00.000Z",
+  "platform": "DeepSurge",
+  "prize_targets": [
+    "Special - Walrus"
+  ],
+  "primary_prize": "Sui Overflow 2026 - Special - Walrus",
+  "backup_prize": "none",
+  "non_primary_prizes_to_ignore": [
+    "The Agentic Web",
+    "DeFi & Payments",
+    "Special - DeepBook"
+  ],
+  "selected_prize_or_track": "Special - Walrus",
+  "judging_criteria": {
+    "event_public_criteria": [
+      "strong execution",
+      "real-world use cases",
+      "projects built to last beyond the event"
+    ],
+    "walrus_track_criteria": [
+      "functional AI agent or agent workflow",
+      "durable data or file access through Walrus",
+      "shared context or portable memory across tools, teams, sessions, or workflows",
+      "Walrus or MemWal on the critical path rather than as a storage badge"
+    ]
+  },
+  "sponsor_or_domain_primitives": [
+    "Walrus Publisher HTTP API",
+    "Walrus Aggregator HTTP API",
+    "Sui object metadata for Walrus proof inspection",
+    "AI agent successor restore from durable scoped memory"
+  ],
+  "submission_fields": [
+    "project name",
+    "description",
+    "track",
+    "repository URL",
+    "live URL",
+    "demo video URL",
+    "team or member profile fields",
+    "additional links"
+  ],
+  "demo_format": "public live URL plus short combined pitch/demo video and paste-ready submission copy",
+  "first_surfaces_judges_see": [
+    "live URL",
+    "README",
+    "demo video",
+    "submission prose",
+    "repository"
+  ],
+  "must_prove_before_submission": [
+    "judge-triggered Memory Will write to Walrus",
+    "cold successor restore reads Walrus before answering",
+    "receipt reopens in a second browser context",
+    "Sui object metadata appears in the proof panel",
+    "failed pointer or missing receipt returns no-success"
+  ],
+  "web3_hook_contest": {
+    "applies": false,
+    "contest_intake_path": "",
+    "hook_primitive_card_path": "",
+    "onchain_proof_pack_path": "",
+    "claim_reality_matrix_path": ".hunter/claim-matrix.json",
+    "social_ops_checklist_path": "",
+    "accepted_chain": "Sui testnet proof inspection",
+    "accepted_pool_manager": "",
+    "required_wallet_or_frontend": "No-wallet exception for server-issued Walrus storage proof in P0",
+    "counted_trading_route": "",
+    "excluded_trading_routes": [],
+    "mainnet_testnet_calibration": "Walrus/Sui testnet proof is acceptable for hackathon verification",
+    "anti_sybil_rules": []
+  },
+  "killer_proof_phrase": "A cold successor replay shows only approved memory.",
+  "max_public_built_with_tags": 6,
+  "judge_recall_requirement": "At least 2 of 3 cold judges can recall user + Walrus/Sui sponsor proof + outcome + visible artifact after 10 seconds.",
+  "primary_sponsor_centrality_requirement": ">=8.5/10 and removing Walrus breaks the restore outcome.",
+  "target_user_or_community": "teams running long AI research, sales, legal, or product work that must survive agent death and scoped handoff",
+  "winner_slot_sentence": "We are trying to win Special - Walrus by proving a killed AI task can resume in a cold successor from approved Walrus memory.",
+  "hard_disqualifiers": [
+    "Walrus appears only as optional upload or storage appendix",
+    "successor sees hidden local context",
+    "success is shown when Walrus read fails",
+    "public demo has no fresh-user path"
+  ],
+  "proof_paths_ranked": [
+    {
+      "type": "sponsor_native_or_live_data_proof",
+      "target": "Walrus blob id and Sui object metadata in the receipt proof panel",
+      "how_to_get_before_submission": "Run public kill -> write -> restore -> inspect path and save runtime report.",
+      "status": "complete"
+    },
+    {
+      "type": "evaluation_or_benchmark",
+      "target": "Cross-browser runtime audit with mobile, reload, second context, and no-success recovery",
+      "how_to_get_before_submission": "Run audit_runtime_interaction against the public URL.",
+      "status": "complete"
+    },
+    {
+      "type": "adoption_or_user_proof",
+      "target": "Judge can operate the public URL without builder browser state",
+      "how_to_get_before_submission": "Public smoke and README first-action section.",
+      "status": "complete"
+    }
+  ],
+  "kill_or_mutate_rules": [
+    "Kill if restore can succeed without a Walrus read.",
+    "Mutate if the first 30 seconds becomes a proof dashboard instead of the Kill Agent action.",
+    "Do not optimize for DeepBook, payments, or broad Agentic Web story."
+  ]
+}

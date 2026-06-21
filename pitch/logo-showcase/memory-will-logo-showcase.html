@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Memory Will Logo Exploration</title>
+    <style>
+      :root {
+        --bg: oklch(0.985 0.004 120);
+        --ink: oklch(0.145 0.018 125);
+        --muted: oklch(0.45 0.026 125);
+        --surface: oklch(0.94 0.012 120);
+        --accent: oklch(0.36 0.12 23);
+      }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+      }
+      main {
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 64px 0;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 40px;
+        letter-spacing: 0;
+      }
+      p {
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 18px;
+        margin-top: 32px;
+      }
+      article {
+        border: 1px solid oklch(0.82 0.018 125);
+        border-radius: 8px;
+        background: white;
+        padding: 24px;
+      }
+      svg {
+        width: 96px;
+        height: 96px;
+        color: var(--ink);
+      }
+      h2 {
+        margin: 18px 0 6px;
+        font-size: 16px;
+      }
+      .selected {
+        border-color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Memory Will</h1>
+      <p>Six restrained SVG directions for a product that makes agent memory inheritance inspectable.</p>
+      <section class="grid" aria-label="Logo variants">
+        <article class="selected">
+          <svg viewBox="0 0 100 100" role="img" aria-label="Will ring">
+            <circle cx="50" cy="50" r="31" fill="none" stroke="currentColor" stroke-width="4" />
+            <path d="M30 57h40" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+            <path d="M36 43h28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+            <circle cx="70" cy="57" r="5" fill="currentColor" />
+          </svg>
+          <h2>Will Ring</h2>
+          <p>Selected direction. A durable ring surrounds two scoped memory lines and one successor seal.</p>
+        </article>
+        <article>
+          <svg viewBox="0 0 100 100" role="img" aria-label="Flatline seal">
+            <path d="M18 52h18l5-14 9 28 6-14h26" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            <rect x="32" y="24" width="36" height="52" rx="8" fill="none" stroke="currentColor" stroke-width="3" />
+          </svg>
+          <h2>Flatline Seal</h2>
+          <p>The death beat sits inside a receipt shape. Strong for the demo moment, less flexible for app chrome.</p>
+        </article>
+        <article>
+          <svg viewBox="0 0 100 100" role="img" aria-label="Scoped nodes">
+            <path d="M30 70Q50 70 50 50T70 30" fill="none" stroke="currentColor" stroke-width="3" />
+            <circle cx="30" cy="70" r="6" fill="currentColor" />
+            <circle cx="50" cy="50" r="7" fill="currentColor" />
+            <circle cx="70" cy="30" r="6" fill="currentColor" />
+            <circle cx="35" cy="34" r="3" fill="currentColor" opacity=".35" />
+          </svg>
+          <h2>Scoped Nodes</h2>
+          <p>A predecessor, durable memory, and successor chain. Useful but closer to generic network symbolism.</p>
+        </article>
+        <article>
+          <svg viewBox="0 0 100 100" role="img" aria-label="Redaction gate">
+            <rect x="22" y="24" width="56" height="52" rx="10" fill="none" stroke="currentColor" stroke-width="4" />
+            <path d="M35 39h30M35 51h18M35 63h30" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+            <path d="M56 48l14 14M70 48L56 62" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+          </svg>
+          <h2>Redaction Gate</h2>
+          <p>Clear redaction metaphor. Good for proof pages, too literal for the core product mark.</p>
+        </article>
+        <article>
+          <svg viewBox="0 0 100 100" role="img" aria-label="Cold restore">
+            <path d="M25 28h50v44H25z" fill="none" stroke="currentColor" stroke-width="4" />
+            <path d="M36 44h28M36 56h16" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+            <path d="M66 56l8 8-8 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <h2>Cold Restore</h2>
+          <p>Document plus forward motion. Strong for iconography, but less distinctive as a brand mark.</p>
+        </article>
+        <article>
+          <svg viewBox="0 0 100 100" role="img" aria-label="Inheritance stamp">
+            <circle cx="50" cy="50" r="26" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="6 6" />
+            <path d="M40 33h20v34H40z" fill="none" stroke="currentColor" stroke-width="4" />
+            <path d="M36 67h28" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+          </svg>
+          <h2>Inheritance Stamp</h2>
+          <p>Formal and receipt-like. Good secondary stamp for the success frame.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

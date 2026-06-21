@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <radialGradient id="finalGlow" cx="70%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#4EC5F1" stop-opacity="0.20"/>
+      <stop offset="62%" stop-color="#73F0B8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#4EC5F1" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="screenGlow" x="-12%" y="-12%" width="124%" height="124%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#4EC5F1" flood-opacity="0.30" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="background">
+    <rect x="0" y="0" width="1280" height="720" fill="#0B0F14"/>
+    <rect x="0" y="0" width="1280" height="720" fill="url(#finalGlow)"/>
+    <path d="M56 86H1224 M56 642H1224" stroke="#223143" stroke-width="1.5" stroke-opacity="0.8"/>
+  </g>
+  <g id="header">
+    <text x="56" y="52" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#A8B6C6" letter-spacing="2">TRY IT, THEN INSPECT IT</text>
+    <text x="1224" y="52" text-anchor="end" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#667789">06 / 06</text>
+  </g>
+  <g id="left-cta">
+    <text x="64" y="166" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="62" font-weight="800" fill="#EAF1F7">
+      <tspan x="64" dy="0">Run the</tspan>
+      <tspan x="64" dy="68">Memory Will.</tspan>
+    </text>
+    <text x="68" y="324" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="23" fill="#A8B6C6">
+      <tspan x="68" dy="0">Start with `Kill Agent`, write to Walrus,</tspan>
+      <tspan x="68" dy="34">then open a cold successor from the receipt.</tspan>
+    </text>
+    <rect x="68" y="404" width="514" height="56" rx="12" fill="#121A24" stroke="#4EC5F1" stroke-width="2"/>
+    <use data-icon="tabler-outline/link" x="94" y="419" width="26" height="26" fill="#4EC5F1" stroke-width="2"/>
+    <text x="134" y="440" font-family="Consolas, 'Courier New', monospace" font-size="16" fill="#EAF1F7">knife-marie-microwave-anthropology.trycloudflare.com</text>
+    <rect x="68" y="478" width="314" height="48" rx="24" fill="#73F0B8" fill-opacity="0.14" stroke="#73F0B8" stroke-width="1.7"/>
+    <use data-icon="tabler-outline/receipt" x="92" y="490" width="24" height="24" fill="#73F0B8" stroke-width="2"/>
+    <text x="130" y="510" font-family="Consolas, 'Courier New', monospace" font-size="16" fill="#73F0B8">/?will=latest</text>
+    <g id="checklist">
+      <use data-icon="tabler-outline/check" x="76" y="570" width="22" height="22" fill="#73F0B8" stroke-width="2"/>
+      <text x="110" y="588" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="18" fill="#A8B6C6">Walrus blob and object id are visible.</text>
+      <use data-icon="tabler-outline/check" x="76" y="604" width="22" height="22" fill="#73F0B8" stroke-width="2"/>
+      <text x="110" y="622" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="18" fill="#A8B6C6">Blocked memory stays named but unavailable.</text>
+    </g>
+  </g>
+  <g id="screen-stack">
+    <rect x="664" y="122" width="462" height="520" rx="16" fill="#071018" stroke="#2B3A4B" stroke-width="2"/>
+    <rect x="692" y="154" width="406" height="438" rx="10" fill="#0B0F14" stroke="#4EC5F1" stroke-width="2" filter="url(#screenGlow)"/>
+    <image href="../images/desktop-proof.png" x="708" y="172" width="374" height="394" preserveAspectRatio="xMidYMid meet"/>
+    <rect x="708" y="534" width="374" height="32" fill="#0B0F14" fill-opacity="0.82"/>
+    <text x="728" y="555" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#4EC5F1">real desktop smoke screenshot</text>
+    <rect x="1010" y="398" width="118" height="214" rx="12" fill="#121A24" stroke="#73F0B8" stroke-width="2"/>
+    <image href="../images/mobile-proof-thumb.png" x="1024" y="414" width="90" height="176" preserveAspectRatio="xMidYMin slice"/>
+    <rect x="1024" y="566" width="90" height="24" fill="#0B0F14" fill-opacity="0.78"/>
+    <text x="1069" y="583" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="10" fill="#73F0B8">mobile proof</text>
+  </g>
+  <g id="final-proof">
+    <rect x="726" y="604" width="454" height="42" rx="21" fill="#121A24" stroke="#F7B955" stroke-width="1.5"/>
+    <use data-icon="tabler-outline/shield-check" x="750" y="614" width="22" height="22" fill="#F7B955" stroke-width="2"/>
+    <text x="784" y="631" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="800" fill="#EAF1F7">Inspect receipt proof before judging the claim.</text>
+  </g>
+  <g id="footer">
+    <text x="56" y="682" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="16" fill="#A8B6C6">Submission hold: final hackathon form still requires explicit human approval.</text>
+  </g>
+</svg>

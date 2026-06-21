@@ -1,0 +1,1 @@
+Walrus is on the restore path. The app writes the will before restore is enabled and reads the blob before successor output appears. If the Walrus write or read fails, Memory Will does not fake a successful handoff.

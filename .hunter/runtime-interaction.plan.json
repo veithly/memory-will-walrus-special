@@ -1,0 +1,60 @@
+{
+  "$schema": "runtime-interaction-plan.v1",
+  "base_url": "http://localhost:4393",
+  "report_path": ".hunter/runtime-interaction.report.json",
+  "artifact_dir": ".hunter/runtime-artifacts",
+  "browsers": ["chromium", "firefox", "webkit"],
+  "devices": [
+    { "name": "iPhone 13", "browser": "webkit" },
+    { "name": "Pixel 7", "browser": "chromium" }
+  ],
+  "cases": [
+    {
+      "name": "kill write restore receipt",
+      "context": "fresh public judge path",
+      "steps": [
+        { "action": "goto", "path": "/", "wait_until": "commit" },
+        { "action": "waitFor", "text": "Checkpoint live", "timeout_ms": 60000 },
+        { "action": "click", "role": "button", "name": "Kill Agent" },
+        { "action": "assertText", "text": "Predecessor killed" },
+        { "action": "click", "role": "button", "name": "Write Memory Will" },
+        { "action": "waitFor", "text": "Walrus pointer certified", "timeout_ms": 70000 },
+        { "action": "click", "role": "button", "name": "Open Cold Successor", "timeout_ms": 20000 },
+        { "action": "waitFor", "text": "Scoped restore complete", "timeout_ms": 70000 },
+        { "action": "click", "text": "Legal successor", "timeout_ms": 20000 },
+        { "action": "waitFor", "text": "role legal", "timeout_ms": 70000 },
+        { "action": "click", "role": "button", "name": "Open Receipt" },
+        { "action": "assertText", "text": "Scoped restore ready" },
+        { "action": "click", "role": "button", "name": "Inspect Proof" },
+        { "action": "waitFor", "text": "Proof inspected", "timeout_ms": 70000 },
+        { "action": "screenshot", "path": ".hunter/runtime-artifacts/kill-write-restore-receipt-success.png" },
+        { "action": "reload" },
+        { "action": "assertText", "text": "Receipt reopened", "timeout_ms": 70000 },
+        { "action": "assertText", "text": "Scoped restore ready" }
+      ]
+    },
+    {
+      "name": "receipt reopen second context",
+      "context": "second browser receipt viewer",
+      "steps": [
+        { "action": "goto", "path": "/?will=latest", "wait_until": "commit" },
+        { "action": "waitFor", "text": "Receipt reopened", "timeout_ms": 70000 },
+        { "action": "assertText", "text": "Memory Will Receipt" },
+        { "action": "click", "role": "button", "name": "Inspect Proof" },
+        { "action": "waitFor", "text": "Proof inspected", "timeout_ms": 70000 },
+        { "action": "assertText", "text": "Sui object" }
+      ]
+    },
+    {
+      "name": "negative missing receipt recovery",
+      "context": "fresh-error missing pointer recovery",
+      "steps": [
+        { "action": "goto", "path": "/?will=missing-will", "wait_until": "commit" },
+        { "action": "assertText", "text": "No-success", "timeout_ms": 70000 },
+        { "action": "assertText", "text": "Memory Will receipt not found." },
+        { "action": "click", "role": "button", "name": "Start New Run" },
+        { "action": "waitFor", "text": "Checkpoint live", "timeout_ms": 60000 }
+      ]
+    }
+  ]
+}

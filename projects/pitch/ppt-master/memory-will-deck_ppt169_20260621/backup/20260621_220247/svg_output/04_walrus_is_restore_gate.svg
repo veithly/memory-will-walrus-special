@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="gateBeam" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#4EC5F1" stop-opacity="0"/>
+      <stop offset="43%" stop-color="#4EC5F1" stop-opacity="0.28"/>
+      <stop offset="57%" stop-color="#73F0B8" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#73F0B8" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="gateGlow" cx="50%" cy="46%" r="42%">
+      <stop offset="0%" stop-color="#73F0B8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#73F0B8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="gateFilter" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#4EC5F1" flood-opacity="0.36" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="background">
+    <rect x="0" y="0" width="1280" height="720" fill="#0B0F14"/>
+    <rect x="0" y="0" width="1280" height="720" fill="url(#gateGlow)"/>
+    <rect x="0" y="300" width="1280" height="144" fill="url(#gateBeam)"/>
+    <path d="M56 110H1224 M56 604H1224" stroke="#223143" stroke-width="1.5" stroke-opacity="0.82"/>
+  </g>
+  <g id="header">
+    <text x="56" y="58" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#A8B6C6" letter-spacing="2">LOAD-BEARING WALRUS</text>
+    <text x="1224" y="58" text-anchor="end" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#667789">04 / 06</text>
+    <text x="56" y="124" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="40" font-weight="800" fill="#EAF1F7">Walrus is the gate between death and succession.</text>
+  </g>
+  <g id="pipeline">
+    <rect x="60" y="222" width="186" height="256" rx="10" fill="#121A24" stroke="#2B3A4B" stroke-width="2"/>
+    <use data-icon="tabler-outline/skull" x="96" y="252" width="34" height="34" fill="#F7B955" stroke-width="2"/>
+    <text x="96" y="326" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="25" font-weight="800" fill="#EAF1F7">Killed</text>
+    <text x="96" y="356" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="25" font-weight="800" fill="#EAF1F7">agent</text>
+    <text x="96" y="404" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="16" fill="#A8B6C6">
+      <tspan x="96" dy="0">Local context</tspan>
+      <tspan x="96" dy="24">is no longer</tspan>
+      <tspan x="96" dy="24">the source.</tspan>
+    </text>
+    <path d="M250 350H324" stroke="#4EC5F1" stroke-width="4" stroke-linecap="round"/>
+    <use data-icon="tabler-outline/arrow-right" x="294" y="336" width="28" height="28" fill="#4EC5F1" stroke-width="2"/>
+
+    <rect x="332" y="222" width="198" height="256" rx="10" fill="#121A24" stroke="#4EC5F1" stroke-width="2"/>
+    <use data-icon="tabler-outline/server" x="368" y="252" width="34" height="34" fill="#4EC5F1" stroke-width="2"/>
+    <text x="368" y="326" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="25" font-weight="800" fill="#EAF1F7">Publisher</text>
+    <text x="368" y="356" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="25" font-weight="800" fill="#EAF1F7">write</text>
+    <text x="368" y="404" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#A8B6C6">
+      <tspan x="368" dy="0">POST</tspan>
+      <tspan x="368" dy="24">/api/memory-wills</tspan>
+      <tspan x="368" dy="24">before restore</tspan>
+    </text>
+    <path d="M534 350H604" stroke="#4EC5F1" stroke-width="4" stroke-linecap="round"/>
+    <use data-icon="tabler-outline/arrow-right" x="574" y="336" width="28" height="28" fill="#4EC5F1" stroke-width="2"/>
+
+    <rect x="612" y="184" width="252" height="332" rx="12" fill="#071018" stroke="#73F0B8" stroke-width="3" filter="url(#gateFilter)"/>
+    <use data-icon="tabler-outline/database" x="708" y="228" width="56" height="56" fill="#73F0B8" stroke-width="2"/>
+    <text x="738" y="326" text-anchor="middle" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="34" font-weight="800" fill="#EAF1F7">Walrus</text>
+    <text x="738" y="364" text-anchor="middle" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="28" font-weight="800" fill="#73F0B8">certified blob</text>
+    <text x="738" y="418" text-anchor="middle" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#A8B6C6">
+      <tspan x="738" dy="0">object id</tspan>
+      <tspan x="738" dy="25">blob id</tspan>
+      <tspan x="738" dy="25">policy hash</tspan>
+    </text>
+    <path d="M868 350H938" stroke="#73F0B8" stroke-width="4" stroke-linecap="round"/>
+    <use data-icon="tabler-outline/arrow-right" x="908" y="336" width="28" height="28" fill="#73F0B8" stroke-width="2"/>
+
+    <rect x="946" y="222" width="198" height="256" rx="10" fill="#121A24" stroke="#73F0B8" stroke-width="2"/>
+    <use data-icon="tabler-outline/route" x="982" y="252" width="34" height="34" fill="#73F0B8" stroke-width="2"/>
+    <text x="982" y="326" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="25" font-weight="800" fill="#EAF1F7">Aggregator</text>
+    <text x="982" y="356" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="25" font-weight="800" fill="#EAF1F7">read</text>
+    <text x="982" y="404" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#A8B6C6">
+      <tspan x="982" dy="0">POST</tspan>
+      <tspan x="982" dy="24">/api/successor</tspan>
+      <tspan x="982" dy="24">/restore</tspan>
+    </text>
+    <path d="M1148 350H1214" stroke="#73F0B8" stroke-width="4" stroke-linecap="round"/>
+    <use data-icon="tabler-outline/arrow-right" x="1184" y="336" width="28" height="28" fill="#73F0B8" stroke-width="2"/>
+  </g>
+  <g id="failure-rule">
+    <rect x="184" y="548" width="912" height="64" rx="10" fill="#121A24" stroke="#F7B955" stroke-width="1.7"/>
+    <use data-icon="tabler-outline/alert-triangle" x="216" y="566" width="28" height="28" fill="#F7B955" stroke-width="2"/>
+    <text x="260" y="575" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="19" font-weight="800" fill="#EAF1F7">If Walrus write or read fails, Memory Will does not fake success.</text>
+    <text x="260" y="601" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="16" fill="#A8B6C6">The successor is gated on a real storage pointer, not on hidden local state.</text>
+  </g>
+  <g id="footer">
+    <text x="56" y="672" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="16" fill="#A8B6C6">This is why the Walrus primitive changes the product behavior: it is required before restore.</text>
+  </g>
+</svg>

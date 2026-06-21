@@ -1,0 +1,9 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Memory Will mono logo">
+  <rect x="14" y="14" width="72" height="72" rx="8" fill="currentColor" opacity="0.08" />
+  <g fill="none" stroke="currentColor" stroke-linecap="round">
+    <circle cx="50" cy="50" r="29" stroke-width="5" />
+    <path d="M29 57h42" stroke-width="5" />
+    <path d="M36 43h28" stroke-width="5" />
+  </g>
+  <circle cx="70" cy="57" r="5" fill="currentColor" />
+</svg>

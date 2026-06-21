@@ -1,0 +1,162 @@
+{
+  "lang": "zh",
+  "recommend": {
+    "canvas": "ppt169",
+    "mode": "narrative",
+    "visual_style": "dark-tech",
+    "icons": "tabler-outline",
+    "image_usage": "provided",
+    "formula_policy": "text-only",
+    "generation_mode": "continuous"
+  },
+  "page_count": {
+    "value": "6"
+  },
+  "audience": {
+    "value": "Sui Overflow judges reviewing Special - Walrus submissions asynchronously. They need the first action, real Walrus dependency, Sui proof boundary, and try-it path in under three minutes."
+  },
+  "content_divergence": {
+    "value": "Balanced: restructure the source into a tight pitch, keep all claims sourced, and do not add unsupported chain or publish claims."
+  },
+  "color": {
+    "selected": 0,
+    "candidates": [
+      {
+        "name_zh": "冷启动黑场",
+        "name_en": "Cold-start dark",
+        "note_zh": "适合 AI 死亡和继承主题，Walrus/Sui 证据用冷色发光，风险边界用琥珀色。",
+        "note_en": "A dark product-demo palette with cold proof accents and amber boundary markers.",
+        "palette": {
+          "background": "#0B0F14",
+          "secondary_bg": "#121A24",
+          "primary": "#4EC5F1",
+          "accent": "#73F0B8",
+          "secondary_accent": "#F7B955",
+          "body_text": "#EAF1F7"
+        }
+      },
+      {
+        "name_zh": "审计纸面",
+        "name_en": "Audit paper",
+        "note_zh": "更像评审包和证明文件，干净、可信，适合强调 receipt 和 no-success 边界。",
+        "note_en": "A light audit-report palette for receipts, proof, and inspection copy.",
+        "palette": {
+          "background": "#F7F4EC",
+          "secondary_bg": "#ECE6D8",
+          "primary": "#17324D",
+          "accent": "#1C8E7E",
+          "secondary_accent": "#B84A3A",
+          "body_text": "#17202A"
+        }
+      },
+      {
+        "name_zh": "链上控制台",
+        "name_en": "Onchain console",
+        "note_zh": "偏开发者演示，Sui/Walrus 状态更突出，但不牺牲可读性。",
+        "note_en": "A developer-console palette that foregrounds Walrus and Sui state.",
+        "palette": {
+          "background": "#101827",
+          "secondary_bg": "#1A2433",
+          "primary": "#7BDFF2",
+          "accent": "#F05454",
+          "secondary_accent": "#F5C542",
+          "body_text": "#F2F6FA"
+        }
+      }
+    ]
+  },
+  "typography": {
+    "selected": 0,
+    "candidates": [
+      {
+        "name_zh": "产品路演 Sans",
+        "name_en": "Product pitch sans",
+        "note_zh": "强可读性，适合录屏、评审视频和短句标题。",
+        "note_en": "Readable in screenshots and video, with direct product headings.",
+        "heading": {
+          "cjk": "Microsoft YaHei",
+          "latin": "Aptos Display",
+          "css": "\"Aptos Display\", \"Microsoft YaHei\", Arial, sans-serif",
+          "sample_cjk": "杀死代理，继承记忆",
+          "sample_latin": "Kill Agent, Restore Memory"
+        },
+        "body": {
+          "cjk": "Microsoft YaHei",
+          "latin": "Aptos",
+          "css": "Aptos, \"Microsoft YaHei\", Arial, sans-serif",
+          "sample_cjk": "Walrus 写入后才允许恢复。",
+          "sample_latin": "Restore waits for a Walrus read."
+        },
+        "body_size": 18
+      },
+      {
+        "name_zh": "编辑部混排",
+        "name_en": "Editorial mix",
+        "note_zh": "更像严肃评审稿，适合 receipt 和机制解释页。",
+        "note_en": "An editorial mix for proof-heavy pages.",
+        "heading": {
+          "cjk": "Microsoft YaHei",
+          "latin": "Georgia",
+          "css": "Georgia, \"Microsoft YaHei\", serif",
+          "sample_cjk": "记忆遗嘱",
+          "sample_latin": "Memory Will"
+        },
+        "body": {
+          "cjk": "Microsoft YaHei",
+          "latin": "Aptos",
+          "css": "Aptos, \"Microsoft YaHei\", Arial, sans-serif",
+          "sample_cjk": "证明面板读取 Walrus 和 Sui metadata。",
+          "sample_latin": "The proof panel reads Walrus and Sui metadata."
+        },
+        "body_size": 19
+      },
+      {
+        "name_zh": "开发者控制台",
+        "name_en": "Developer console",
+        "note_zh": "适合突出 API route、blob id、object id 和 Move registry。",
+        "note_en": "Best when code paths and object ids need to feel central.",
+        "heading": {
+          "cjk": "Microsoft YaHei",
+          "latin": "Arial",
+          "css": "Arial, \"Microsoft YaHei\", sans-serif",
+          "sample_cjk": "恢复门禁",
+          "sample_latin": "Restore Gate"
+        },
+        "body": {
+          "cjk": "Microsoft YaHei",
+          "latin": "Arial",
+          "css": "Arial, \"Microsoft YaHei\", sans-serif",
+          "sample_cjk": "POST /api/successor/restore",
+          "sample_latin": "POST /api/successor/restore"
+        },
+        "body_size": 18
+      }
+    ]
+  },
+  "visual_style_spectrum": [
+    {
+      "id": "dark-tech",
+      "tag_zh": "稳妥强技术",
+      "tag_en": "Technical default",
+      "note_zh": "像高端 AI devtool 发布页，能承接 Walrus/Sui proof。",
+      "note_en": "Like a premium AI devtool launch deck with real proof surfaces."
+    },
+    {
+      "id": "editorial",
+      "tag_zh": "可信评审稿",
+      "tag_en": "Editorial proof",
+      "note_zh": "像研究机构短报告，利于讲清楚边界。",
+      "note_en": "Like a short research memo, good for proof boundaries."
+    },
+    {
+      "id": "blueprint",
+      "tag_zh": "系统蓝图",
+      "tag_en": "System blueprint",
+      "note_zh": "像架构 walkthrough，机制感更重。",
+      "note_en": "Like an architecture walkthrough, more mechanism-forward."
+    }
+  ],
+  "refine_spec": {
+    "value": false
+  }
+}

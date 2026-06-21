@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#4EC5F1" stop-opacity="0.13" />
+      <stop offset="100%" stop-color="#4EC5F1" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <g id="background">
+    <rect x="0" y="0" width="1280" height="720" fill="#0B0F14" />
+    <rect x="0" y="0" width="1280" height="720" fill="url(#bgGlow)" />
+    <path d="M56 112H1224 M56 608H1224" stroke="#223143" stroke-width="1.5" stroke-opacity="0.8" />
+  </g>
+  <g id="header">
+    <text x="56" y="58" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#A8B6C6" letter-spacing="2">SCOPE BEFORE SUCCESSION</text>
+    <text x="1224" y="58" text-anchor="end" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#667789">02 / 06</text>
+    <text x="56" y="124" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="40" font-weight="800" fill="#EAF1F7">The successor needs memory and restraint.</text>
+  </g>
+  <g id="allowed-panel">
+    <path fill="#121A24" stroke="#73F0B8" stroke-width="2" d="M82,178 H582 A10,10 0 0 1 592,188 V518 A10,10 0 0 1 582,528 H82 A10,10 0 0 1 72,518 V188 A10,10 0 0 1 82,178 Z" />
+    
+  <g transform="translate(104, 210) scale(1.33333)" fill="none" stroke="#73F0B8" stroke-width="2">
+    <path d="M5 12l5 5l10 -10" />
+  </g>
+    <text x="150" y="236" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="28" font-weight="800" fill="#EAF1F7">Allowed memory</text>
+    <text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="19" x="104" y="284">Vendor shortlist with sourced findings</text><text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="19" x="104" y="326">Open questions for the next agent</text><text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="19" x="104" y="368">Next step from the locked checkpoint</text><text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="19" x="104" y="410">Role-specific successor instruction</text><path fill="#73F0B8" fill-opacity="0.14" stroke="#73F0B8" stroke-width="1.5" d="M123,462 H415 A19,19 0 0 1 434,481 V481 A19,19 0 0 1 415,500 H123 A19,19 0 0 1 104,481 V481 A19,19 0 0 1 123,462 Z" />
+    <text x="124" y="486" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#73F0B8">safe to restore after Walrus read</text>
+  </g>
+  <g id="blocked-panel">
+    <path fill="#121A24" stroke="#F7B955" stroke-width="2" d="M698,178 H1198 A10,10 0 0 1 1208,188 V518 A10,10 0 0 1 1198,528 H698 A10,10 0 0 1 688,518 V188 A10,10 0 0 1 698,178 Z" />
+    
+  <g transform="translate(720, 210) scale(1.33333)" fill="none" stroke="#F7B955" stroke-width="2">
+    <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6" />
+    <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+    <path d="M8 11v-4a4 4 0 1 1 8 0v4" />
+  </g>
+    <text x="766" y="236" font-family="'Aptos Display', 'Microsoft YaHei', Arial, sans-serif" font-size="28" font-weight="800" fill="#EAF1F7">Unavailable memory</text>
+    <text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="19" x="720" y="284">Private budget ceiling</text><text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="19" x="720" y="326">Procurement timing notes</text><text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="19" x="720" y="368">Unverified vendor preference</text><text font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" fill="#A8B6C6" font-size="19" x="720" y="410">Any blocked scope the judge toggles</text><path fill="#F7B955" fill-opacity="0.14" stroke="#F7B955" stroke-width="1.5" d="M739,462 H1041 A19,19 0 0 1 1060,481 V481 A19,19 0 0 1 1041,500 H739 A19,19 0 0 1 720,481 V481 A19,19 0 0 1 739,462 Z" />
+    <text x="740" y="486" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#F7B955">must be named, not leaked</text>
+  </g>
+  <g id="center-boundary">
+    <line x1="640" y1="182" x2="640" y2="528" stroke="#2B3A4B" stroke-width="2" stroke-dasharray="8,8" />
+    <circle cx="640" cy="352" r="42" fill="#0B0F14" stroke="#4EC5F1" stroke-width="2" />
+    
+  <g transform="translate(620, 332) scale(1.66667)" fill="none" stroke="#4EC5F1" stroke-width="2">
+    <path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06" />
+    <path d="M15 19l2 2l4 -4" />
+  </g>
+  </g>
+  <g id="takeaway">
+    <path fill="#071018" stroke="#2B3A4B" stroke-width="1.5" d="M194,574 H1086 A10,10 0 0 1 1096,584 V636 A10,10 0 0 1 1086,646 H194 A10,10 0 0 1 184,636 V584 A10,10 0 0 1 194,574 Z" />
+    <text x="220" y="606" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="20" font-weight="700" fill="#EAF1F7">The user decides what survives before any successor runs.</text>
+    <text x="220" y="632" font-family="Aptos, 'Microsoft YaHei', Arial, sans-serif" font-size="16" fill="#A8B6C6">That is the product difference from a saved chat summary.</text>
+  </g>
+</svg>

@@ -1,0 +1,88 @@
+{
+  "entries": [
+    {
+      "gate": "G0",
+      "read_at": "2026-06-20T20:22:00.000Z",
+      "status": "read",
+      "ref": "C:/Users/Ricky/Documents/Project/hackathonhunter-skill/SKILL.md",
+      "decision_or_constraint": "Restarted as a fresh Hunter full-mode project after the workflow correction."
+    },
+    {
+      "gate": "G3",
+      "read_at": "2026-06-20T21:45:00.000Z",
+      "status": "read",
+      "ref": "references/04-experience-quality.md",
+      "decision_or_constraint": "G3 must define one visual lane, component library, success frame, clarity contract, motion plan, and required design skill evidence."
+    },
+    {
+      "gate": "G3",
+      "read_at": "2026-06-20T21:46:00.000Z",
+      "status": "read",
+      "ref": "pitch/project_prd.md",
+      "decision_or_constraint": "The visual contract must preserve kill action, durable will write, cold successor restore, receipt, inspection, and honest degraded states."
+    },
+    {
+      "gate": "G3",
+      "read_at": "2026-06-20T21:47:00.000Z",
+      "status": "read",
+      "ref": "pitch/uiux_interaction_plan.md",
+      "decision_or_constraint": "The UI must expose workbench, kill and scope writer, cold successor restore, mutation diff, receipt, inspect, recovery, and mobile QR behavior."
+    },
+    {
+      "gate": "G3",
+      "read_at": "2026-06-20T21:48:00.000Z",
+      "status": "read",
+      "ref": ".hunter/external-skill-usage.json",
+      "decision_or_constraint": "G3 completion requires recorded design-taste-frontend, impeccable, and logo-generator evidence rows with real output files."
+    },
+    {
+      "gate": "G4",
+      "read_at": "2026-06-20T22:11:00.000Z",
+      "status": "read",
+      "ref": "references/02-stack-and-build.md",
+      "decision_or_constraint": "The build must prove fresh user -> action -> state change -> result artifact -> inspect/reopen/share; fallback may only be degraded/error state."
+    },
+    {
+      "gate": "G4",
+      "read_at": "2026-06-20T22:12:00.000Z",
+      "status": "read",
+      "ref": "pitch/visual-build-contract.md",
+      "decision_or_constraint": "The implemented first screen must keep the split living/dead successor stage, flatline/stamp moment, scoped memory ledger, receipt proof rail, and required source markers."
+    },
+    {
+      "gate": "G4",
+      "read_at": "2026-06-20T22:13:00.000Z",
+      "status": "read",
+      "ref": "stack.lock.json",
+      "decision_or_constraint": "Branch is BOTH; source and evidence must show AI output, Walrus/MemWal durable write/read/restore, and Sui/Walrus proof inspection."
+    },
+    {
+      "gate": "G4",
+      "read_at": "2026-06-20T22:14:00.000Z",
+      "status": "read",
+      "ref": "https://www.deepsurge.xyz/hackathons/b587dc0c-4cb8-4e63-ada5-519df38103bf",
+      "decision_or_constraint": "Browser snapshot confirmed Sui Overflow 2026, Walrus headline partner, tracks including Special - Walrus, active dates, submit project affordance, and participant handbook/resource links."
+    },
+    {
+      "gate": "G5",
+      "read_at": "2026-06-20T23:13:00.000Z",
+      "status": "read",
+      "ref": "references/07-shipping.md",
+      "decision_or_constraint": "Public smoke must use a fresh visitor path, state change, inspect/reopen/share result, mobile viewport, screenshots, console/network checks, and deployed URL proof."
+    },
+    {
+      "gate": "G6",
+      "read_at": "2026-06-20T23:34:00.000Z",
+      "status": "read",
+      "ref": "references/07-shipping.md",
+      "decision_or_constraint": "README and submission copy must tell user -> action -> result -> inspection path; deck requires ppt-master in the current skill list; final video requires HyperFrames, measured TTS, and real app recording."
+    },
+    {
+      "gate": "G7",
+      "read_at": "2026-06-21T00:10:00.000Z",
+      "status": "read",
+      "ref": "references/07-shipping.md",
+      "decision_or_constraint": "Submission form work must stop before final Submit for human confirmation; paste only known fields and keep strong claims backed by runtime/report/source proof."
+    }
+  ]
+}

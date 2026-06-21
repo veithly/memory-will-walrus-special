@@ -1,0 +1,147 @@
+{
+  "project_language": "en",
+  "implementation_language": "TypeScript",
+  "language_decision": {
+    "project_language": "en",
+    "hackathon_content_language": "en",
+    "source_url": "https://www.deepsurge.xyz/hackathons/b587dc0c-4cb8-4e63-ada5-519df38103bf",
+    "source_sample": "DeepSurge browser snapshot exposes English event details, tracks, resources, and submission affordance."
+  },
+  "branch": "BOTH",
+  "wallet_required": false,
+  "wallet_path": "No P0 wallet path. The judge does not claim, mint, pay, trade, or sign an owned chain object in the submitted demo.",
+  "no_wallet_exception": "Valid no-wallet exception: the P0 result is server-issued and verifier oriented. An anonymous judge creates a session-scoped Memory Will, the server writes it through the Walrus Publisher, and the judge inspects the returned Walrus blob id plus Sui object metadata without signing or owning an asset.",
+  "demo_signer_policy": "No browser signer or private key is exposed in P0. If a future owned Memory Will attestation is added, wallet connect -> sign -> transaction becomes mandatory before any public claim.",
+  "frontend": "Next.js App Router + React + Radix Themes + bespoke Memory Will state components",
+  "storage": "Walrus publisher/aggregator stores MemoryWill, TaskCheckpoint, DelegationPolicy, RedactionLog, SuccessorReplayTrace, and Receipt payloads on the critical path; local project state only preserves the current demo session and receipt history.",
+  "real_data_source": "Judge input, OpenAI-compatible live model output, Walrus write/read blob records, and Sui testnet object metadata for Walrus proof inspection.",
+  "real_data_sources": [
+    {
+      "name": "Walrus Publisher HTTP API",
+      "url": "https://docs.wal.app/usage/web-api.html",
+      "env": "WALRUS_PUBLISHER_URL",
+      "product_use": "POST /api/memory-wills writes the Memory Will JSON to /v1/blobs?epochs=1 before successor restore is enabled."
+    },
+    {
+      "name": "Walrus Aggregator HTTP API",
+      "url": "https://docs.wal.app/usage/web-api.html",
+      "env": "WALRUS_AGGREGATOR_URL",
+      "product_use": "POST /api/successor/restore reads the Walrus blob by blob id before asking the successor model to continue."
+    },
+    {
+      "name": "OpenAI-compatible Chat Completions",
+      "url": "https://platform.openai.com/docs/api-reference/chat/create",
+      "env": "OPENAI_API_KEY",
+      "product_use": "src/lib/memory-will/agent.ts generates role-specific successor output and records live agent runs."
+    },
+    {
+      "name": "Sui testnet JSON-RPC",
+      "url": "https://sdk.mystenlabs.com/sui/clients/json-rpc",
+      "env": "SUI_TESTNET_RPC_URL",
+      "explorer_url_template": "https://suiscan.xyz/testnet/object/{walrusObjectId}",
+      "product_use": "src/lib/memory-will/sui-proof.ts reads Walrus Sui object metadata for the inspect proof surface and can be checked in a Sui explorer by runtime object id. The optional Move registry package in move/ can publish MemoryWillAnchor objects after a human-approved package publish."
+    }
+  ],
+  "deployment": "Public web app target after local G4 verification; final host selected during G5.",
+  "delivery_mode": "combined-pitch-demo",
+  "delivery_mode_reason": "Online hackathon judging needs one combined pitch plus live product recording so reviewers can understand the scene and inspect the working loop asynchronously.",
+  "video_composer": "hyperframes",
+  "video_target_duration_s": 270,
+  "required_env": [
+    {
+      "name": "OPENAI_API_KEY",
+      "official_key_url": "https://platform.openai.com/api-keys",
+      "status": "configured in parent .env.shared for local verification; can also be supplied by deployment secrets"
+    },
+    {
+      "name": "OPENAI_BASE_URL",
+      "official_key_url": "https://platform.openai.com/docs/api-reference",
+      "status": "configured by default OpenAI endpoint or OPENAI-compatible provider base URL"
+    },
+    {
+      "name": "OPENAI_DEFAULT_MODEL",
+      "official_key_url": "https://platform.openai.com/docs/models",
+      "status": "configured by OPENAI_DEFAULT_MODEL, STEPFUN_LLM_MODEL, or the app default"
+    },
+    {
+      "name": "WALRUS_PUBLISHER_URL",
+      "official_key_url": "https://docs.wal.app/usage/web-api.html",
+      "status": "configured in parent .env.shared for local verification"
+    },
+    {
+      "name": "WALRUS_AGGREGATOR_URL",
+      "official_key_url": "https://docs.wal.app/usage/web-api.html",
+      "status": "configured in parent .env.shared for local verification"
+    },
+    {
+      "name": "SUI_TESTNET_RPC_URL",
+      "official_key_url": "https://sdk.mystenlabs.com/sui/clients/json-rpc",
+      "status": "configured in parent .env.shared; app also has official Sui testnet RPC default"
+    }
+  ],
+  "sponsor_technology": [
+    {
+      "name": "Walrus",
+      "primitive": "HTTP publisher and aggregator blob storage, backed by Walrus Sui object ids",
+      "reviewer_visible_use": "The Kill Agent flow writes a Memory Will to Walrus before the Open Cold Successor button appears; the inspect surface shows blob id and Sui object id.",
+      "proof": "src/lib/memory-will/walrus.ts, src/app/api/memory-wills/route.ts, src/app/api/proof/[willId]/route.ts, and runtime case 'kill write restore receipt'"
+    },
+    {
+      "name": "Sui",
+      "primitive": "Sui JSON-RPC object metadata read for the Walrus object returned by the write path, plus a Sui Move MemoryWillAnchor registry package for an optional published anchor transaction.",
+      "reviewer_visible_use": "The Inspect Proof panel reads the Walrus object metadata through Sui testnet RPC, names the Move registry state, and blocks success if no pointer exists.",
+      "proof": "src/lib/memory-will/sui-proof.ts, src/lib/memory-will/sui-anchor.ts, move/sources/memory_will_registry.move, runtime case 'receipt reopen second context', and explorer template https://suiscan.xyz/testnet/object/{walrusObjectId}"
+    }
+  ],
+  "feature_density": {
+    "focused_surface_reason": "The root route is the product workbench: it contains the kill action, scope controls, Walrus write, cold restore, mutation, receipt, and proof rail in one first-run surface.",
+    "user_case_beats": [
+      {
+        "route": "/",
+        "surface": "predecessor workbench",
+        "user_action": "click Kill Agent",
+        "visible_state_change": "agent status changes from checkpoint live to predecessor killed and local context goes to 0%",
+        "backend_or_storage_evidence": "src/app/memory-will-workbench.tsx state transition plus src/app/api/workspace/init/route.ts creates owned workspace",
+        "runtime_case": "kill write restore receipt"
+      },
+      {
+        "route": "/api/memory-wills",
+        "surface": "scope writer",
+        "user_action": "click Write Memory Will after choosing role and redactions",
+        "visible_state_change": "Walrus pointer appears and Open Cold Successor becomes available",
+        "backend_or_storage_evidence": "src/lib/memory-will/walrus.ts writes /v1/blobs and src/lib/memory-will/store.ts saves receipt",
+        "runtime_case": "kill write restore receipt"
+      },
+      {
+        "route": "/api/successor/restore",
+        "surface": "cold successor",
+        "user_action": "click Open Cold Successor and then switch successor role",
+        "visible_state_change": "successor output hash and role-specific output change",
+        "backend_or_storage_evidence": "src/lib/memory-will/agent.ts calls OpenAI-compatible chat.completions and appends .hunter/agent-runs.json",
+        "runtime_case": "kill write restore receipt"
+      },
+      {
+        "route": "/?will=latest",
+        "surface": "receipt and proof rail",
+        "user_action": "open receipt in a second browser context and inspect proof",
+        "visible_state_change": "receipt reopens with blob id, role, redactions, replay, and Sui object proof",
+        "backend_or_storage_evidence": "src/app/api/memory-wills/[willId]/route.ts and src/app/api/proof/[willId]/route.ts read stored receipt and Walrus/Sui proof",
+        "runtime_case": "receipt reopen second context"
+      }
+    ]
+  },
+  "why_this_stack": "A TypeScript web app can ship the first-minute kill -> write -> restore -> receipt loop with browser smoke tests, while keeping proof inspection and degraded states visible. The selected product needs live AI behavior and a Walrus durable object primitive, so branch is BOTH.",
+  "deploy": {
+    "cloudflare_override_reason": "G5 public smoke uses a Cloudflare quick tunnel in front of a local Next production server. Stable Cloudflare Pages/Workers deployment is deferred because this Next app uses dynamic API routes and local demo state; final judging should replace the temporary tunnel with a stable host.",
+    "production_url": "https://memory-will-walrus-special.veithly.workers.dev",
+    "smoke_tested_at": "2026-06-21T07:33:18+08:00",
+    "smoke_evidence": ".hunter/public-smoke.md"
+  },
+  "cut_if_time_runs_out": [
+    "settings/workspace route",
+    "multiple workspaces",
+    "MCP/framework adapter",
+    "advanced receipt export",
+    "deep Sui proof visualization beyond pointer/read status"
+  ]
+}

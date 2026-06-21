@@ -1,0 +1,10 @@
+{
+  "active": true,
+  "mode": "full",
+  "current_gate": "G7",
+  "current_cycle": "submit hold",
+  "gpt_pro_tournament": "full",
+  "user_corrections_this_run": 1,
+  "implementation_allowed": true,
+  "reason_implementation_blocked": ""
+}

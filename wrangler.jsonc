@@ -1,0 +1,26 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "memory-will-walrus-special",
+  "compatibility_date": "2026-06-21",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "memory-will-walrus-special"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "MEMORY_WILL_STATE",
+      "id": "dd2d2afcff9649beaf0b41e662bedfc4"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

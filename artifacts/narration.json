@@ -1,0 +1,70 @@
+{
+  "$schema": "narration.v1",
+  "language": "en",
+  "tts": {
+    "provider_required": "mimo",
+    "provider_used": "mimo",
+    "provider": "mimo",
+    "model": "mimo-v2.5-tts",
+    "voice": "Chloe",
+    "allow_fallback": false
+  },
+  "instruction": "Plainspoken product narration. Keep the live receipt and inspection path on screen.",
+  "scenes": [
+    {
+      "id": "01_hook",
+      "title": "Hook",
+      "text": "A reviewer clicks Kill Agent and gets a Memory Will receipt with a Walrus blob id.",
+      "highlight": true,
+      "result_artifact": "Memory Will Receipt",
+      "audio_path": "artifacts\\tts_chunks\\01_hook.wav",
+      "duration_ms": 6240
+    },
+    {
+      "id": "02_pressure",
+      "title": "Pressure",
+      "text": "Private budget notes stay blocked while the successor reads approved memory.",
+      "highlight": false,
+      "result_artifact": "blocked memory list",
+      "audio_path": "artifacts\\tts_chunks\\02_pressure.wav",
+      "duration_ms": 5280
+    },
+    {
+      "id": "03_live_action",
+      "title": "Live action",
+      "text": "Now write the will to Walrus, then open the cold successor.",
+      "highlight": true,
+      "result_artifact": "scoped successor output",
+      "audio_path": "artifacts\\tts_chunks\\03_live_action.wav",
+      "duration_ms": 4640
+    },
+    {
+      "id": "04_result",
+      "title": "Result",
+      "text": "Receipt fields show blob id, redactions, replay trace, role, and model output hash.",
+      "highlight": true,
+      "result_artifact": "receipt fields",
+      "audio_path": "artifacts\\tts_chunks\\04_result.wav",
+      "duration_ms": 7520
+    },
+    {
+      "id": "05_inspection",
+      "title": "Inspection",
+      "text": "Inspect Proof reads Walrus plus Sui object fields.",
+      "highlight": true,
+      "result_artifact": "proof panel",
+      "audio_path": "artifacts\\tts_chunks\\05_inspection.wav",
+      "duration_ms": 4640
+    },
+    {
+      "id": "06_reopen",
+      "title": "Reopen",
+      "text": "In a second browser context, the latest-will path opens the same receipt.",
+      "highlight": false,
+      "result_artifact": "receipt reopen path",
+      "audio_path": "artifacts\\tts_chunks\\06_reopen.wav",
+      "duration_ms": 5120
+    }
+  ],
+  "voice": "mimo:mimo-v2.5-tts:Chloe"
+}

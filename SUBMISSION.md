@@ -73,7 +73,7 @@ Memory Will turns agent handoff into an inheritance event. The user kills a live
 
 ## Fields To Fill Before Final Submit
 
-- Repo URL:
+- Repo URL: https://github.com/veithly/memory-will-walrus-special
 - Video URL: https://youtu.be/JY0_hyjtelM
 - Deck URL: local file ready at `projects/pitch/ppt-master/memory-will-deck_ppt169_20260621/exports/memory-will-deck_20260621_232345.pptx`
 - Team/member profile fields:

@@ -6,4 +6,5 @@
 - Real chain/storage proof: public API smoke produced Walrus `ready`, Sui proof `ready`, and live successor replay.
 - Runtime audit on Worker: Chromium, Firefox, and Pixel 7 targets pass; WebKit targets time out at `page.goto` against `workers.dev` in this local audit environment.
 - YouTube upload: complete, https://youtu.be/JY0_hyjtelM.
+- GitHub repo: https://github.com/veithly/memory-will-walrus-special.
 - DeepSurge submission: blocked until browser extension/login is available; final submit click also requires explicit user confirmation per AGENTS.md.
